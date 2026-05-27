@@ -5,13 +5,13 @@ using System.Collections.Generic;
 public class TransparencyController : MonoBehaviour
 {
     public List<GameObject> objs = new List<GameObject>();
-    List<GameObject> gameObjects = new List<GameObject>();
+    public List<GameObject> gameObjects = new List<GameObject>();
     List<float> originAlpha = new List<float>();
     public float transparency;
     public float lastTransparency;
     public int state;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Awake()
+    void Start()
     {
         lastTransparency = transparency;
         foreach (GameObject g in objs)
@@ -53,19 +53,19 @@ public class TransparencyController : MonoBehaviour
                     if (gameObjects[i].GetComponent<Image>())
                     {
                         Color c = gameObjects[i].GetComponent<Image>().color;
-                        c.a = Mathf.Lerp(0, originAlpha[i], transparency);
+                        c.a = Mathf.Lerp(0, 1, transparency);
                         gameObjects[i].GetComponent<Image>().color = c;
                     }
                     else if (gameObjects[i].GetComponent<SpriteRenderer>())
                     {
                         Color c = gameObjects[i].GetComponent<SpriteRenderer>().color;
-                        c.a = Mathf.Lerp(0, originAlpha[i], transparency);
+                        c.a = Mathf.Lerp(0, 1, transparency);
                         gameObjects[i].GetComponent<SpriteRenderer>().color = c;
                     }
                     else if (gameObjects[i].GetComponent<TextMeshProUGUI>())
                     {
                         Color c = gameObjects[i].GetComponent<TextMeshProUGUI>().color;
-                        c.a = Mathf.Lerp(0, originAlpha[i], transparency);
+                        c.a = Mathf.Lerp(0, 1, transparency);
                         gameObjects[i].GetComponent<TextMeshProUGUI>().color = c;
                     }
                 }
