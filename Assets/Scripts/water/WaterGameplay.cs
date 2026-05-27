@@ -15,13 +15,17 @@ public class WaterGameplay : MonoBehaviour
     public List<GameObject> next = new List<GameObject>();
     [Header("完成事件")]
     public UnityEvent onPuzzleComplete;
+    [Header("动画")]
+    public RuntimeAnimatorController runtimeAnimatorController;
+    public string idleName;
+    public string playName;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
         startState = 0;
         progress = 0;
         InitGame();
-        GetComponent<Button>().onClick.AddListener(StartGame);
+        startButton.GetComponent<Button>().onClick.AddListener(StartGame);
     }
 
     // Update is called once per frame
@@ -35,29 +39,37 @@ public class WaterGameplay : MonoBehaviour
         {
             water.SetActive(false);
             WaterBubble c = water.AddComponent<WaterBubble>();
+            c.gameplay = this;
             c.time_1 = time_1;
             c.time_2 = time_2;
             c.end_time = end_time;
+            c.runtimeAnimatorController = runtimeAnimatorController;
+            c.idleName = idleName;
+            c.playName = playName;
+            c.Init();
         }
     }
     void StartGame()
     {
-        startState = 1;
-        for(int i=0; i<waterBubbles.Count;i++)
+        if(startState == 0)
         {
-            if (i == 0)
+            startState = 1;
+            foreach (GameObject water in waterBubbles)
             {
-                waterBubbles[0].GetComponent<WaterBubble>().state = 1;
+                water.SetActive(true);
             }
-            else
+            for (int i = 0; i < waterBubbles.Count; i++)
             {
-                waterBubbles[i].GetComponent<WaterBubble>().state = 0;
-            }           
-        }
-        foreach (GameObject water in waterBubbles)
-        {
-            water.SetActive(true);
-        }
+                if (i == 0)
+                {
+                    waterBubbles[0].GetComponent<WaterBubble>().state = 1;
+                }
+                else
+                {
+                    waterBubbles[i].GetComponent<WaterBubble>().state = 0;
+                }
+            }          
+        }      
     }
     public void NextStep()
     {
@@ -74,6 +86,7 @@ public class WaterGameplay : MonoBehaviour
     public void LoseGame()
     {
         startState = 0;
+        progress = 0;
         foreach (GameObject water in waterBubbles)
         {
             water.SetActive(false);
