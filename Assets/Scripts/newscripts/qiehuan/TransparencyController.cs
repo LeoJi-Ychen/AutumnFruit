@@ -9,8 +9,9 @@ public class TransparencyController : MonoBehaviour
     List<float> originAlpha = new List<float>();
     public float transparency;
     public float lastTransparency;
+    public int state;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
         lastTransparency = transparency;
         foreach (GameObject g in objs)
@@ -40,32 +41,36 @@ public class TransparencyController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {      
-        if (lastTransparency!=transparency)
+    {
+        if (state == 1)
         {
-            lastTransparency = transparency;
-            for (int i = 0; i < gameObjects.Count; i++)
+            state = 0;
+            if (true)
             {
-                if (gameObjects[i].GetComponent<Image>())
+                lastTransparency = transparency;
+                for (int i = 0; i < gameObjects.Count; i++)
                 {
-                    Color c = gameObjects[i].GetComponent<Image>().color;
-                    c.a = Mathf.Lerp(0, originAlpha[i], transparency);
-                    gameObjects[i].GetComponent<Image>().color = c;
-                }
-                else if (gameObjects[i].GetComponent<SpriteRenderer>())
-                {
-                    Color c = gameObjects[i].GetComponent<SpriteRenderer>().color;
-                    c.a = Mathf.Lerp(0, originAlpha[i], transparency);
-                    gameObjects[i].GetComponent<SpriteRenderer>().color = c;
-                }
-                else if (gameObjects[i].GetComponent<TextMeshProUGUI>())
-                {
-                    Color c = gameObjects[i].GetComponent<TextMeshProUGUI>().color;
-                    c.a = Mathf.Lerp(0, originAlpha[i], transparency);
-                    gameObjects[i].GetComponent<TextMeshProUGUI>().color = c;
+                    if (gameObjects[i].GetComponent<Image>())
+                    {
+                        Color c = gameObjects[i].GetComponent<Image>().color;
+                        c.a = Mathf.Lerp(0, originAlpha[i], transparency);
+                        gameObjects[i].GetComponent<Image>().color = c;
+                    }
+                    else if (gameObjects[i].GetComponent<SpriteRenderer>())
+                    {
+                        Color c = gameObjects[i].GetComponent<SpriteRenderer>().color;
+                        c.a = Mathf.Lerp(0, originAlpha[i], transparency);
+                        gameObjects[i].GetComponent<SpriteRenderer>().color = c;
+                    }
+                    else if (gameObjects[i].GetComponent<TextMeshProUGUI>())
+                    {
+                        Color c = gameObjects[i].GetComponent<TextMeshProUGUI>().color;
+                        c.a = Mathf.Lerp(0, originAlpha[i], transparency);
+                        gameObjects[i].GetComponent<TextMeshProUGUI>().color = c;
+                    }
                 }
             }
-        }     
+        }       
     }
     void GetChilds(Transform p)
     {

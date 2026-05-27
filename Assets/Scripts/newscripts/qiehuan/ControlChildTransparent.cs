@@ -5,11 +5,17 @@ using TMPro;
 
 public class ControlChildTransparent : MonoBehaviour
 {
+    public GameObject benchmark;
     List<GameObject> childs = new List<GameObject>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (benchmark == null)
+        {
+            benchmark = this.gameObject;
+        }
         GetChilds(this.gameObject.transform);
+        childs.Remove(benchmark);
         SetTransparent();
     }
 
@@ -21,17 +27,17 @@ public class ControlChildTransparent : MonoBehaviour
     void SetTransparent()
     {
         float a = 0;
-        if (GetComponent<Image>())
+        if (benchmark.GetComponent<Image>())
         {
-            a = GetComponent<Image>().color.a;
+            a = benchmark.GetComponent<Image>().color.a;
         }
-        else if (GetComponent<SpriteRenderer>())
+        else if (benchmark.GetComponent<SpriteRenderer>())
         {
-            a = GetComponent<SpriteRenderer>().color.a;
+            a = benchmark.GetComponent<SpriteRenderer>().color.a;
         }
-        else if (GetComponent<TextMeshProUGUI>())
+        else if (benchmark.GetComponent<TextMeshProUGUI>())
         {
-            a = GetComponent<TextMeshProUGUI>().color.a;
+            a = benchmark.GetComponent<TextMeshProUGUI>().color.a;
         }
 
         foreach (GameObject child in childs)

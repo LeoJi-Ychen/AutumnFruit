@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem.XR;
 
 public class BubbleClickGameplay : MonoBehaviour
@@ -20,6 +21,7 @@ public class BubbleClickGameplay : MonoBehaviour
     [Header("Animator")]
     public RuntimeAnimatorController runtimeAnimatorController;
     public bool autoInit;
+    public UnityEvent onComplete;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
@@ -101,6 +103,7 @@ public class BubbleClickGameplay : MonoBehaviour
                 {
                     n.SetActive(true);
                 }
+                onComplete?.Invoke();
             }
         }
     }

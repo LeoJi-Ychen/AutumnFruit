@@ -33,32 +33,13 @@ public class TranstionEffect : MonoBehaviour
         ChangePanel
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
-        InitTransparencyController();
-        cam = Camera.main;
         es = EventSystem.current;
-        originPos = cam.transform.position;
         foreach(GameObject button in buttons)
         {
             button.GetComponent<Button>().onClick.AddListener(Transition);
         }
-    }
-    private void OnEnable()
-    {
-        state = 0;
-        timer = 0;
-        if (nextPanel == null)
-        {
-            nextPanel = nextPage.gameObject;
-        }
-        nextPanel.SetActive(false);
-        InitTransparencyController();
-        nextTransparencyController.transparency = -1;
-    }
-
-    void InitTransparencyController()
-    {
         if (currentTransparencyController == null)
         {
             currentTransparencyController = this.gameObject.AddComponent<TransparencyController>();
@@ -69,6 +50,33 @@ public class TranstionEffect : MonoBehaviour
             nextTransparencyController = this.gameObject.AddComponent<TransparencyController>();
             nextTransparencyController.objs = new List<GameObject>(nextAppear);
         }
+    }
+    private void OnEnable()
+    {
+        state = 0;
+        timer = 0;
+        if (nextPanel == null)
+        {
+            nextPanel = nextPage.gameObject;
+        }         
+    }
+
+    void InitTransparencyController()
+    {
+        cam = Camera.main;
+        originPos = cam.transform.position;
+        if (currentTransparencyController == null)
+        {
+            currentTransparencyController = this.gameObject.AddComponent<TransparencyController>();
+            currentTransparencyController.objs = new List<GameObject>(currentFade);
+        }
+        if (nextTransparencyController == null)
+        {
+            nextTransparencyController = this.gameObject.AddComponent<TransparencyController>();
+            nextTransparencyController.objs = new List<GameObject>(nextAppear);
+        }
+        nextPanel.SetActive(false);
+        nextTransparencyController.transparency = -1;
     }
     // Update is called once per frame
     void Update()
@@ -83,14 +91,15 @@ public class TranstionEffect : MonoBehaviour
                     Preload(sceneName);
                 }
             }
-            if (timer < Clock)
+            if (timer <= Clock)
             {
                 timer += Time.deltaTime;
-            }        
-            CameraMoveEffect();
-            TransparencyEffect();
-            if (timer >= Clock)
+                CameraMoveEffect();
+                TransparencyEffect();
+            }                 
+            if (timer > Clock)
             {
+                TransparencyEffectEnd();
                 es.enabled = true;
                 if (kind == Kind.ChangeScene)
                 {
@@ -132,16 +141,31 @@ public class TranstionEffect : MonoBehaviour
     {
         if (currentTransparencyController != null)
         {
+            currentTransparencyController.state = 1;
             currentTransparencyController.transparency = Mathf.SmoothStep(1, 0, Mathf.Max(0,Mathf.Min(timer / TransParencyClock,1)));
         }
         if (nextTransparencyController != null)
         {
+            nextTransparencyController.state = 1;
             nextTransparencyController.transparency = Mathf.SmoothStep(1, 0, Mathf.Max(0, Mathf.Min(((Clock - timer) / TransParencyClock),1)));
         }        
     }
+    public void TransparencyEffectEnd()
+    {
+        if (currentTransparencyController != null)
+        {
+            currentTransparencyController.state = 0;
+            currentTransparencyController.transparency = 0;
+        }
+        if (nextTransparencyController != null)
+        {
+            nextTransparencyController.state = 0;
+            nextTransparencyController.transparency = 1;
+        }
+    }
     public void Transition()
     {
-        cam = Camera.main;
+        InitTransparencyController();
         if (state == 0)
         {
             nextPanel.SetActive(true);
