@@ -65,7 +65,6 @@ public class WaterBubble : MonoBehaviour
             {
                 state = 0;
                 timer = 0;
-                anim.speed = 0;
                 anim.Play(idleName);
                 gameplay.NextStep();
             }

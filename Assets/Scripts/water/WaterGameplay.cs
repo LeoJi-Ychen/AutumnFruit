@@ -21,6 +21,7 @@ public class WaterGameplay : MonoBehaviour
     public string playName;
     [Header("进度条")]
     public GameObject bar;
+    public GameObject bar_line;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -30,7 +31,8 @@ public class WaterGameplay : MonoBehaviour
         startButton.GetComponent<Button>().onClick.AddListener(StartGame);
         if (bar != null)
         {
-            bar.AddComponent<WaterProgressBar>();
+            WaterProgressBar b = bar.AddComponent<WaterProgressBar>();
+            b.bar = bar_line;
             bar.SetActive(false);
         }
     }
@@ -98,7 +100,7 @@ public class WaterGameplay : MonoBehaviour
         {
             if (bar)
             {
-                bar.GetComponent<WaterProgressBar>().progress = ((float)(progress + 1)) / (float)waterBubbles.Count;
+                bar.GetComponent<WaterProgressBar>().progress = (float)progress / (float)waterBubbles.Count;
             }          
         }    
     }
