@@ -8,7 +8,7 @@ public class TreeEnergyFinalAll : MonoBehaviour
     public GameObject resultImage;
 
     [Header("Particle（生成用）⭐")]
-    public ParticleSystem leafParticlePrefab; // 拖“预制体”！
+    public ParticleSystem leafParticlePrefab;
 
     [Header("Button Image（可选）")]
     public Image treeImage;
@@ -24,6 +24,9 @@ public class TreeEnergyFinalAll : MonoBehaviour
 
     [Header("Direction")]
     public FillDirection fillDirection = FillDirection.LeftToRight;
+
+    [Header("完成触发 ⭐")]
+    public GameObject nextObject;   // ⭐ 不用接口了，直接控制物体
 
     private int currentClicks = 0;
     private float currentProgress = 0f;
@@ -55,9 +58,7 @@ public class TreeEnergyFinalAll : MonoBehaviour
         }
 
         if (treeImage != null && normalSprite != null)
-        {
             treeImage.sprite = normalSprite;
-        }
 
         if (resultImage != null)
             resultImage.SetActive(false);
@@ -80,19 +81,17 @@ public class TreeEnergyFinalAll : MonoBehaviour
     {
         if (isFinished) return;
 
-        // ⭐⭐⭐ 核心：生成新的粒子（不会影响旧的）
         if (leafParticlePrefab != null)
         {
             ParticleSystem newLeaf = Instantiate(
                 leafParticlePrefab,
                 transform.position,
                 Quaternion.identity,
-                transform   // 放在按钮下面（跟着UI）
+                transform
             );
 
             newLeaf.Play();
 
-            // ⭐ 自动销毁（防止堆积）
             Destroy(newLeaf.gameObject, newLeaf.main.duration + newLeaf.main.startLifetime.constantMax);
         }
 
@@ -100,9 +99,7 @@ public class TreeEnergyFinalAll : MonoBehaviour
         targetProgress = (float)currentClicks / totalClicksToFull;
 
         if (treeImage != null && clickSprite != null)
-        {
             treeImage.sprite = clickSprite;
-        }
 
         if (currentClicks >= totalClicksToFull)
         {
@@ -118,13 +115,15 @@ public class TreeEnergyFinalAll : MonoBehaviour
             resultImage.SetActive(true);
 
         if (treeImage != null && finishedSprite != null)
-        {
             treeImage.sprite = finishedSprite;
-        }
 
         if (btn != null)
-        {
             btn.enabled = false;
+
+        // ⭐⭐⭐ 直接触发下一个物体（不需要接口）
+        if (nextObject != null)
+        {
+            nextObject.SetActive(true);
         }
     }
 

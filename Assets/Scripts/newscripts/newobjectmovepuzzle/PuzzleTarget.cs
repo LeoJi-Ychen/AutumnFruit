@@ -1,11 +1,17 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class PuzzleTarget : MonoBehaviour
 {
     [Header("检测")]
-    public float hoverDistance = 100f;
+    public float hoverDistance = 1.5f;
+
+    [Header("🔧 遮挡判定开关")]
+    public bool enableOcclusionCheck = false; // 默认关闭
 
     private bool isHovering = false;
     private bool isPlaced = false;
@@ -13,23 +19,76 @@ public class PuzzleTarget : MonoBehaviour
     [Header("事件")]
     public UnityEvent onPlaced;
 
-    // ⭐⭐⭐ 新增：缩小替换模式（完全独立，不影响原逻辑）
     [Header("🔄 可选：缩小嵌入替换")]
     public bool useReplaceMode = false;
-    public RectTransform replacePoint;     // 黑色区域
+    public RectTransform replacePoint;
     public Vector3 replaceScale = Vector3.one;
     public float replaceSpeed = 8f;
 
-    // 👉 检测是否进入范围
-    public void CheckHover(Vector2 piecePos)
+    // Hover检测
+    public void CheckHover(Vector3 pieceWorldPos)
     {
-        if (isPlaced) return;
+        // target 被隐藏
+        if (!gameObject.activeInHierarchy)
+        {
+            isHovering = false;
+            return;
+        }
 
-        float dist = Vector2.Distance(
-            ((RectTransform)transform).anchoredPosition,
-            piecePos
-        );
+        // Image透明
+        Image img = GetComponent<Image>();
+        if (img != null && img.color.a <= 0.01f)
+        {
+            isHovering = false;
+            return;
+        }
 
+        // CanvasGroup隐藏
+        CanvasGroup cg = GetComponent<CanvasGroup>();
+        if (cg != null && cg.alpha <= 0.01f)
+        {
+            isHovering = false;
+            return;
+        }
+
+        // 已完成
+        if (isPlaced)
+        {
+            isHovering = false;
+            return;
+        }
+
+        // ⭐ 新增遮挡判定（排除所有 PuzzlePiece）
+        if (enableOcclusionCheck)
+        {
+            Vector2 screenPos = Camera.main.WorldToScreenPoint(transform.position);
+            PointerEventData pointer = new PointerEventData(EventSystem.current);
+            pointer.position = screenPos;
+
+            var results = new List<RaycastResult>();
+            EventSystem.current.RaycastAll(pointer, results);
+
+            bool blocked = false;
+            foreach (var r in results)
+            {
+                if (r.gameObject == gameObject) break; // 到自己就停止
+                if (r.gameObject.GetComponent<PuzzlePiece>() != null) continue; // 忽略拼图本身
+                if (r.gameObject.GetComponent<Graphic>() != null)
+                {
+                    blocked = true;
+                    break;
+                }
+            }
+
+            if (blocked)
+            {
+                isHovering = false;
+                return;
+            }
+        }
+
+        // 距离判定
+        float dist = Vector3.Distance(transform.position, pieceWorldPos);
         isHovering = dist < hoverDistance;
     }
 
@@ -38,7 +97,6 @@ public class PuzzleTarget : MonoBehaviour
         return isHovering;
     }
 
-    // 👉 拼图放上来
     public void OnPlaced(PuzzlePiece piece)
     {
         if (isPlaced) return;
@@ -47,23 +105,20 @@ public class PuzzleTarget : MonoBehaviour
 
         Debug.Log("🎯 拼图放置成功：" + name);
 
-        // 👉 原有事件（不要删）
         onPlaced?.Invoke();
 
-        // ⭐⭐⭐ 新增：缩小嵌入模式（完全额外逻辑）
         if (useReplaceMode && replacePoint != null)
         {
             piece.StartCoroutine(ReplaceToTarget(piece));
         }
     }
 
-    // ⭐⭐⭐ 新增：缩小 + 移动 + 嵌入
     IEnumerator ReplaceToTarget(PuzzlePiece piece)
     {
         RectTransform pieceRect = piece.GetComponent<RectTransform>();
 
         Vector2 startPos = pieceRect.anchoredPosition;
-        Vector2 endPos = replacePoint.anchoredPosition;
+        Vector2 endPos = pieceRect.parent.InverseTransformPoint(replacePoint.position);
 
         Vector3 startScale = piece.transform.localScale;
         Vector3 endScale = replaceScale;
@@ -83,10 +138,7 @@ public class PuzzleTarget : MonoBehaviour
         pieceRect.anchoredPosition = endPos;
         piece.transform.localScale = endScale;
 
-        // 👉 设为目标子物体（视觉嵌入）
         piece.transform.SetParent(replacePoint);
-
-        // 👉 层级（保证显示正确）
         piece.transform.SetAsLastSibling();
     }
 }

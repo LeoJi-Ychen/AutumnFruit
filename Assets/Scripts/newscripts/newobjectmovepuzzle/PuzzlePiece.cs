@@ -20,7 +20,7 @@ public class PuzzlePiece : MonoBehaviour,
     public PuzzleTarget target;
     public float snapSpeed = 10f;
 
-    [Header("⭐ 所属拼图管理器（关键）")]
+    [Header("⭐ 所属拼图管理器")]
     public PuzzleManager manager;
 
     [Header("缩放")]
@@ -32,7 +32,13 @@ public class PuzzlePiece : MonoBehaviour,
     public bool changeLayerOnSnap = true;
     public int layerOffset = 1;
 
-    // ⭐⭐⭐ 新增（仅这一行）
+    [Header("完成后设为子物体")]
+    public bool setAsChildOnSnap = false;
+
+    [Header("完成后删除")]
+    public bool destroyAfterSnap = false;
+    public float destroyDelay = 0f;
+
     public System.Action<PuzzlePiece> onPlaced;
 
     private RectTransform rectTransform;
@@ -46,6 +52,9 @@ public class PuzzlePiece : MonoBehaviour,
     private bool isClicking = false;
     private bool isLocked = false;
 
+    // 防止重复触发
+    private bool hasSnapped = false;
+
     void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -56,14 +65,10 @@ public class PuzzlePiece : MonoBehaviour,
     {
         originalScale = transform.localScale;
         targetScale = originalScale;
-
-        // 防止复用问题
-        isLocked = false;
     }
 
     void Update()
     {
-        // ⭐⭐⭐ 关键：完成后停止缩放系统
         if (isLocked) return;
 
         transform.localScale = Vector3.Lerp(
@@ -73,7 +78,6 @@ public class PuzzlePiece : MonoBehaviour,
         );
     }
 
-    // 👉 Hover
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (isLocked) return;
@@ -94,7 +98,6 @@ public class PuzzlePiece : MonoBehaviour,
             targetScale = originalScale;
     }
 
-    // 👉 Click
     public void OnPointerDown(PointerEventData eventData)
     {
         if (isLocked) return;
@@ -117,13 +120,14 @@ public class PuzzlePiece : MonoBehaviour,
             targetScale = originalScale;
     }
 
-    // 👉 Drag
     public void OnBeginDrag(PointerEventData eventData)
     {
         if (!enableDrag || isLocked) return;
 
         isDragging = true;
-        transform.SetAsLastSibling();
+
+        // ❌ 注释掉原来的层级提升
+        // transform.SetAsLastSibling();
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -134,7 +138,7 @@ public class PuzzlePiece : MonoBehaviour,
 
         if (target != null)
         {
-            target.CheckHover(rectTransform.anchoredPosition);
+            target.CheckHover(transform.position);
         }
     }
 
@@ -150,18 +154,18 @@ public class PuzzlePiece : MonoBehaviour,
         }
         else
         {
-            if (enableHover && isPointerOver)
-                targetScale = originalScale * hoverScale;
-            else
-                targetScale = originalScale;
+            targetScale = isPointerOver ? originalScale * hoverScale : originalScale;
         }
     }
 
-    // 👉 吸附 + 锁定
     IEnumerator SnapToTarget()
     {
+        if (hasSnapped) yield break;
+        hasSnapped = true;
+
         Vector2 start = rectTransform.anchoredPosition;
-        Vector2 end = ((RectTransform)target.transform).anchoredPosition;
+
+        Vector2 end = rectTransform.parent.InverseTransformPoint(target.transform.position);
 
         float t = 0;
 
@@ -174,43 +178,45 @@ public class PuzzlePiece : MonoBehaviour,
 
         rectTransform.anchoredPosition = end;
 
-        // ⭐ 层级控制（保持不变）
+        if (setAsChildOnSnap && target != null)
+        {
+            transform.SetParent(target.transform);
+            rectTransform.anchoredPosition = Vector2.zero;
+        }
+
         if (changeLayerOnSnap && target != null)
         {
             int targetIndex = target.transform.GetSiblingIndex();
-            int newIndex = targetIndex + layerOffset;
 
-            int max = transform.parent.childCount - 1;
-            newIndex = Mathf.Clamp(newIndex, 0, max);
+            int newIndex = Mathf.Clamp(
+                targetIndex + layerOffset,
+                0,
+                transform.parent.childCount - 1
+            );
 
             transform.SetSiblingIndex(newIndex);
         }
 
-        // ⭐⭐⭐ 锁定（关键）
         isLocked = true;
-
-        // ⭐ 保持当前缩放（防止被改回）
         targetScale = transform.localScale;
 
-        // 👉 关闭点击
         var img = GetComponent<UnityEngine.UI.Image>();
+
         if (img != null)
             img.raycastTarget = false;
 
-        // 👉 通知目标
-        target.OnPlaced(this);
+        if (target != null)
+            target.OnPlaced(this);
 
-        // 👉 通知管理器
         if (manager != null)
-        {
             manager.NotifyPiecePlaced(this);
-        }
-        else
-        {
-            Debug.LogWarning("⚠️ 没绑定 PuzzleManager：" + name);
-        }
 
-        // ⭐⭐⭐ 新增（只这一行，不影响任何原逻辑）
         onPlaced?.Invoke(this);
+
+        if (destroyAfterSnap)
+        {
+            yield return new WaitForSeconds(destroyDelay);
+            Destroy(gameObject);
+        }
     }
 }

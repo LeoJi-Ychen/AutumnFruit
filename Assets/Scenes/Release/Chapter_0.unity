@@ -263,6 +263,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &4511117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,7 +276,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Drag
-  cam: {fileID: 0}
 --- !u!114 &4511118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -473,7 +473,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Drag
-  cam: {fileID: 0}
 --- !u!1 &15949783
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,6 +615,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &15949792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1055,7 +1055,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Drag
-  cam: {fileID: 0}
 --- !u!114 &40209739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1232,6 +1231,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &44326149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1244,11 +1244,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a995cc61c1e589e4190f4ca238e892c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Puzzle
+  mode: 0
   fragments:
   - {fileID: 1236885051}
   aims:
   - {fileID: 1638649229}
   next: {fileID: 1613103616}
+  nextList: []
+  activeList: []
 --- !u!1 &54918219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1324,6 +1327,8 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 1806845517}
+  includeChildren: 0
+  playOnStart: 1
 --- !u!114 &54918223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1481,6 +1486,8 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  includeChildren: 0
+  playOnStart: 1
 --- !u!1 &75365049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1622,6 +1629,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &79984537
 GameObject:
   m_ObjectHideFlags: 0
@@ -1763,6 +1771,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &115522786
 GameObject:
   m_ObjectHideFlags: 0
@@ -1816,11 +1825,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0116603de3155d64ab83442f18df3ca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1804322407}
-  effect: 0
-  jumpid: 1
-  process_state: 0
-  fadeOutClock: 0
 --- !u!114 &115522790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1931,7 +1935,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Drag
-  cam: {fileID: 0}
 --- !u!1 &124537090
 GameObject:
   m_ObjectHideFlags: 0
@@ -1984,11 +1987,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0116603de3155d64ab83442f18df3ca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1804322407}
-  effect: 0
-  jumpid: 0
-  process_state: 0
-  fadeOutClock: 0
 --- !u!114 &124537096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2091,6 +2089,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &130989982
 GameObject:
   m_ObjectHideFlags: 0
@@ -2205,6 +2204,8 @@ MonoBehaviour:
   finalMode: 0
   initMode: 1
   obj: {fileID: 0}
+  includeChildren: 0
+  playOnStart: 1
 --- !u!114 &130989991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2225,6 +2226,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 1
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &133543678
 GameObject:
   m_ObjectHideFlags: 0
@@ -2366,6 +2368,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &150072706
 GameObject:
   m_ObjectHideFlags: 0
@@ -2507,6 +2510,8 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  includeChildren: 0
+  playOnStart: 1
 --- !u!1 &160466256
 GameObject:
   m_ObjectHideFlags: 0
@@ -2630,6 +2635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a995cc61c1e589e4190f4ca238e892c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Puzzle
+  mode: 0
   fragments:
   - {fileID: 1278769922}
   - {fileID: 2109768490}
@@ -2639,6 +2645,8 @@ MonoBehaviour:
   - {fileID: 1806845517}
   - {fileID: 1806845517}
   next: {fileID: 895353566}
+  nextList: []
+  activeList: []
 --- !u!1 &163360918
 GameObject:
   m_ObjectHideFlags: 0
@@ -2780,6 +2788,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &177738929
 GameObject:
   m_ObjectHideFlags: 0
@@ -2834,11 +2843,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Effect_ObjectMove
   obj: {fileID: 177738929}
   endPoint: {fileID: 1638649229}
-  controlPoint: {fileID: 0}
   md: 0
   speed: 6
   effect: 0
   delayedClock: 0
+  playOnStart: 0
 --- !u!114 &177738932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2852,12 +2861,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Object_ObjectMove
   state_move: 0
-  speed: 0
   posA: {x: 0, y: 0, z: 0}
   endPoint: {fileID: 0}
-  controlPoint: {fileID: 0}
   duration: 2
   next: {fileID: 0}
+  speedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &177738933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3157,6 +3188,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &239387313
 GameObject:
   m_ObjectHideFlags: 0
@@ -3375,6 +3407,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &258697933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3387,11 +3420,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a995cc61c1e589e4190f4ca238e892c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Puzzle
+  mode: 0
   fragments:
   - {fileID: 1819921898}
   aims:
   - {fileID: 1913122616}
   next: {fileID: 44326143}
+  nextList: []
+  activeList: []
 --- !u!1 &276554428
 GameObject:
   m_ObjectHideFlags: 0
@@ -3533,6 +3569,8 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  includeChildren: 0
+  playOnStart: 1
 --- !u!1 &278048843
 GameObject:
   m_ObjectHideFlags: 0
@@ -3796,12 +3834,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Object_ObjectMove
   state_move: 0
-  speed: 0
   posA: {x: 0, y: 0, z: 0}
   endPoint: {fileID: 0}
-  controlPoint: {fileID: 0}
   duration: 2
   next: {fileID: 814979635}
+  speedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &305868212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3822,6 +3882,8 @@ MonoBehaviour:
   finalMode: 1
   initMode: 0
   obj: {fileID: 0}
+  includeChildren: 0
+  playOnStart: 1
 --- !u!114 &305868213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3836,11 +3898,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Effect_ObjectMove
   obj: {fileID: 305868206}
   endPoint: {fileID: 814979635}
-  controlPoint: {fileID: 0}
   md: 0
   speed: 4
   effect: 0
   delayedClock: 0
+  playOnStart: 0
 --- !u!1 &310082457
 GameObject:
   m_ObjectHideFlags: 0
@@ -4140,6 +4202,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &335619414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4646,6 +4709,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &366429769
 GameObject:
   m_ObjectHideFlags: 0
@@ -5178,7 +5242,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Drag
-  cam: {fileID: 0}
 --- !u!114 &448716004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5215,6 +5278,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &448716006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5287,11 +5351,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0116603de3155d64ab83442f18df3ca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1804322407}
-  effect: 0
-  jumpid: 4
-  process_state: 0
-  fadeOutClock: 0
 --- !u!114 &465963715
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5471,6 +5530,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &467422907
 GameObject:
   m_ObjectHideFlags: 0
@@ -5775,7 +5835,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 41.883}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 193.44, y: 1.3445}
+  m_AnchoredPosition: {x: 378, y: 10.186}
   m_SizeDelta: {x: 89.37, y: 79.629}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &509981024
@@ -5903,7 +5963,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Drag
-  cam: {fileID: 0}
 --- !u!1 &510348310
 GameObject:
   m_ObjectHideFlags: 0
@@ -6195,6 +6254,8 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  includeChildren: 0
+  playOnStart: 1
 --- !u!1 &551392182
 GameObject:
   m_ObjectHideFlags: 0
@@ -6339,6 +6400,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &551392191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6351,7 +6413,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Drag
-  cam: {fileID: 0}
 --- !u!114 &551392192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6741,6 +6802,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &586212241
 GameObject:
   m_ObjectHideFlags: 0
@@ -7187,6 +7249,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &626415579
 GameObject:
   m_ObjectHideFlags: 0
@@ -7242,11 +7305,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0116603de3155d64ab83442f18df3ca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1804322407}
-  effect: 0
-  jumpid: 0
-  process_state: 0
-  fadeOutClock: 0
 --- !u!114 &626415586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7381,6 +7439,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &626415592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7911,6 +7970,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &701322289
 GameObject:
   m_ObjectHideFlags: 0
@@ -8221,6 +8281,8 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  includeChildren: 0
+  playOnStart: 1
 --- !u!1 &742320698
 GameObject:
   m_ObjectHideFlags: 0
@@ -8475,6 +8537,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &771282411
 GameObject:
   m_ObjectHideFlags: 0
@@ -8675,6 +8738,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &782586617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8767,6 +8831,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &782802775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8780,12 +8845,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Object_ObjectMove
   state_move: 0
-  speed: 0
   posA: {x: 0, y: 0, z: 0}
   endPoint: {fileID: 0}
-  controlPoint: {fileID: 0}
   duration: 2
   next: {fileID: 0}
+  speedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &782802776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9027,6 +9114,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &801354189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9132,11 +9220,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a995cc61c1e589e4190f4ca238e892c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Puzzle
+  mode: 0
   fragments:
   - {fileID: 1690128271}
   aims:
   - {fileID: 803724944}
   next: {fileID: 33170899}
+  nextList: []
+  activeList: []
 --- !u!114 &803724952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9157,6 +9248,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &814113873
 GameObject:
   m_ObjectHideFlags: 0
@@ -9286,12 +9378,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Object_ObjectMove
   state_move: 0
-  speed: 0
   posA: {x: 0, y: 0, z: 0}
   endPoint: {fileID: 0}
-  controlPoint: {fileID: 0}
   duration: 2
   next: {fileID: 0}
+  speedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &814979638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9394,6 +9508,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &814979642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9408,11 +9523,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Effect_ObjectMove
   obj: {fileID: 814979635}
   endPoint: {fileID: 782802772}
-  controlPoint: {fileID: 0}
   md: 0
   speed: 4
   effect: 0
   delayedClock: 0
+  playOnStart: 0
 --- !u!1 &815415631
 GameObject:
   m_ObjectHideFlags: 0
@@ -9664,12 +9779,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Object_ObjectMove
   state_move: 0
-  speed: 0
   posA: {x: 0, y: 0, z: 0}
   endPoint: {fileID: 0}
-  controlPoint: {fileID: 0}
   duration: 2
   next: {fileID: 0}
+  speedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &846539957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10092,6 +10229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a995cc61c1e589e4190f4ca238e892c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Puzzle
+  mode: 0
   fragments:
   - {fileID: 6202415}
   - {fileID: 1437250571}
@@ -10107,6 +10245,8 @@ MonoBehaviour:
   - {fileID: 1642030515}
   - {fileID: 1642030515}
   next: {fileID: 465963707}
+  nextList: []
+  activeList: []
 --- !u!1 &865208447
 GameObject:
   m_ObjectHideFlags: 0
@@ -10203,6 +10343,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &867020476
 GameObject:
   m_ObjectHideFlags: 0
@@ -10299,6 +10440,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &870978425
 GameObject:
   m_ObjectHideFlags: 0
@@ -10649,6 +10791,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &878613862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10746,6 +10889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a995cc61c1e589e4190f4ca238e892c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Puzzle
+  mode: 0
   fragments:
   - {fileID: 1404849838}
   - {fileID: 1978813811}
@@ -10755,6 +10899,8 @@ MonoBehaviour:
   - {fileID: 1806845517}
   - {fileID: 1806845517}
   next: {fileID: 1148749250}
+  nextList: []
+  activeList: []
 --- !u!114 &895353570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10830,6 +10976,8 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 782586609}
+  includeChildren: 0
+  playOnStart: 1
 --- !u!1 &903738366
 GameObject:
   m_ObjectHideFlags: 0
@@ -10996,7 +11144,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Drag
-  cam: {fileID: 0}
 --- !u!1 &905845072
 GameObject:
   m_ObjectHideFlags: 0
@@ -11172,6 +11319,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &914123690
 GameObject:
   m_ObjectHideFlags: 0
@@ -11338,7 +11486,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Drag
-  cam: {fileID: 0}
 --- !u!1 &923770338
 GameObject:
   m_ObjectHideFlags: 0
@@ -11613,6 +11760,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &939730722
 GameObject:
   m_ObjectHideFlags: 0
@@ -11915,7 +12063,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Drag
-  cam: {fileID: 0}
 --- !u!114 &964573650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11952,6 +12099,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &964573652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12154,6 +12302,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &989124088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12527,6 +12676,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &1035696525
 GameObject:
   m_ObjectHideFlags: 0
@@ -12897,6 +13047,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &1063352728
 GameObject:
   m_ObjectHideFlags: 0
@@ -13130,6 +13281,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &1075822789
 GameObject:
   m_ObjectHideFlags: 0
@@ -13484,11 +13636,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a995cc61c1e589e4190f4ca238e892c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Puzzle
+  mode: 0
   fragments:
   - {fileID: 115522786}
   aims:
   - {fileID: 1226336210}
   next: {fileID: 391773318}
+  nextList: []
+  activeList: []
 --- !u!1 &1119171268
 GameObject:
   m_ObjectHideFlags: 0
@@ -13635,11 +13790,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0116603de3155d64ab83442f18df3ca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1804322407}
-  effect: 0
-  jumpid: 2
-  process_state: 0
-  fadeOutClock: 0
 --- !u!114 &1132265218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13851,6 +14001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a995cc61c1e589e4190f4ca238e892c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Puzzle
+  mode: 0
   fragments:
   - {fileID: 4511110}
   - {fileID: 551392182}
@@ -13860,6 +14011,8 @@ MonoBehaviour:
   - {fileID: 1806845517}
   - {fileID: 1806845517}
   next: {fileID: 54918219}
+  nextList: []
+  activeList: []
 --- !u!114 &1148749254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14177,11 +14330,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0116603de3155d64ab83442f18df3ca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1804322407}
-  effect: 0
-  jumpid: 0
-  process_state: 0
-  fadeOutClock: 0
 --- !u!114 &1192503411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14631,11 +14779,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Effect_ObjectMove
   obj: {fileID: 1236885051}
   endPoint: {fileID: 1638649229}
-  controlPoint: {fileID: 177738929}
   md: 0
   speed: 6
   effect: 0
   delayedClock: 0
+  playOnStart: 0
 --- !u!114 &1236885058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14649,12 +14797,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Object_ObjectMove
   state_move: 0
-  speed: 0
   posA: {x: 0, y: 0, z: 0}
   endPoint: {fileID: 0}
-  controlPoint: {fileID: 0}
   duration: 2
   next: {fileID: 0}
+  speedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1245280346
 GameObject:
   m_ObjectHideFlags: 0
@@ -14814,6 +14984,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &1245280354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14907,6 +15078,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &1252339049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15695,7 +15867,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Drag
-  cam: {fileID: 0}
 --- !u!114 &1278769929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15732,6 +15903,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &1278769931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15888,6 +16060,8 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  includeChildren: 0
+  playOnStart: 1
 --- !u!1 &1291047821
 GameObject:
   m_ObjectHideFlags: 0
@@ -16104,6 +16278,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &1331250435
 GameObject:
   m_ObjectHideFlags: 0
@@ -16256,7 +16431,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Drag
-  cam: {fileID: 0}
 --- !u!114 &1331250443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16292,6 +16466,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &1339159669
 GameObject:
   m_ObjectHideFlags: 0
@@ -16555,6 +16730,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &1350849324
 GameObject:
   m_ObjectHideFlags: 0
@@ -16614,6 +16790,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &1350849327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17083,6 +17260,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &1380321076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17241,6 +17419,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &1388837999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17253,11 +17432,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a995cc61c1e589e4190f4ca238e892c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Puzzle
+  mode: 0
   fragments:
   - {fileID: 1331250435}
   aims:
   - {fileID: 403584163}
   next: {fileID: 258697927}
+  nextList: []
+  activeList: []
 --- !u!1 &1404849838
 GameObject:
   m_ObjectHideFlags: 0
@@ -17394,7 +17576,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Drag
-  cam: {fileID: 0}
 --- !u!114 &1404849845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17431,6 +17612,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &1404849847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17732,7 +17914,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Drag
-  cam: {fileID: 0}
 --- !u!1 &1445421330
 GameObject:
   m_ObjectHideFlags: 0
@@ -17792,6 +17973,8 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 1380321067}
+  includeChildren: 0
+  playOnStart: 1
 --- !u!1 &1449263394
 GameObject:
   m_ObjectHideFlags: 0
@@ -17851,6 +18034,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &1449263397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17972,11 +18156,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Effect_ObjectMove
   obj: {fileID: 1468713194}
   endPoint: {fileID: 1729373853}
-  controlPoint: {fileID: 0}
   md: 0
   speed: 3
   effect: 0
   delayedClock: 0
+  playOnStart: 0
 --- !u!114 &1468713196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17990,12 +18174,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Object_ObjectMove
   state_move: 0
-  speed: 0
   posA: {x: 0, y: 0, z: 0}
   endPoint: {fileID: 0}
-  controlPoint: {fileID: 0}
   duration: 2
   next: {fileID: 0}
+  speedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1468713200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18383,6 +18589,8 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  includeChildren: 0
+  playOnStart: 1
 --- !u!1 &1494733635
 GameObject:
   m_ObjectHideFlags: 0
@@ -18599,6 +18807,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &1511551293
 GameObject:
   m_ObjectHideFlags: 0
@@ -18815,6 +19024,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &1536153736
 GameObject:
   m_ObjectHideFlags: 0
@@ -18956,6 +19166,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &1551246819
 GameObject:
   m_ObjectHideFlags: 0
@@ -19243,7 +19454,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Drag
-  cam: {fileID: 0}
 --- !u!1 &1564001992
 GameObject:
   m_ObjectHideFlags: 0
@@ -19819,6 +20029,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &1633142374
 GameObject:
   m_ObjectHideFlags: 0
@@ -19879,6 +20090,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &1633142377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19892,12 +20104,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Object_ObjectMove
   state_move: 0
-  speed: 0
   posA: {x: 0, y: 0, z: 0}
   endPoint: {fileID: 0}
-  controlPoint: {fileID: 0}
   duration: 2
   next: {fileID: 0}
+  speedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1633142378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20271,6 +20505,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &1657665810
 GameObject:
   m_ObjectHideFlags: 0
@@ -20513,7 +20748,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Drag
-  cam: {fileID: 0}
 --- !u!114 &1690128280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21017,6 +21251,8 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 1245280346}
+  includeChildren: 0
+  playOnStart: 1
 --- !u!1 &1757593143
 GameObject:
   m_ObjectHideFlags: 0
@@ -21071,11 +21307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0116603de3155d64ab83442f18df3ca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1804322407}
-  effect: 0
-  jumpid: 3
-  process_state: 0
-  fadeOutClock: 0
 --- !u!114 &1757593149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21201,7 +21432,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Drag
-  cam: {fileID: 0}
 --- !u!1 &1775596523
 GameObject:
   m_ObjectHideFlags: 0
@@ -21343,6 +21573,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &1780938789
 GameObject:
   m_ObjectHideFlags: 0
@@ -21403,6 +21634,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &1780938792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21416,12 +21648,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Object_ObjectMove
   state_move: 0
-  speed: 0
   posA: {x: 0, y: 0, z: 0}
   endPoint: {fileID: 0}
-  controlPoint: {fileID: 0}
   duration: 2
   next: {fileID: 0}
+  speedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1780938793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21534,14 +21788,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 577726ea452c35e4d9fbc04f55ab8fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalog: 0
-  loop_state: 1
-  init_state: 1
-  init_id: 0
-  audioSource: {fileID: 0}
-  soundClips: []
-  process: []
-  audioID: 0
 --- !u!82 &1781688128
 AudioSource:
   m_ObjectHideFlags: 0
@@ -21837,14 +22083,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 577726ea452c35e4d9fbc04f55ab8fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catalog: 1
-  loop_state: 0
-  init_state: 0
-  init_id: 0
-  audioSource: {fileID: 0}
-  soundClips: []
-  process: []
-  audioID: 0
 --- !u!82 &1804322409
 AudioSource:
   m_ObjectHideFlags: 0
@@ -22110,6 +22348,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &1806845520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22284,7 +22523,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Drag
-  cam: {fileID: 0}
 --- !u!114 &1819921905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22336,6 +22574,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &1822223606
 GameObject:
   m_ObjectHideFlags: 0
@@ -22952,11 +23191,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a995cc61c1e589e4190f4ca238e892c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Puzzle
+  mode: 0
   fragments:
   - {fileID: 1757593143}
   aims:
   - {fileID: 939730722}
   next: {fileID: 1196384919}
+  nextList: []
+  activeList: []
 --- !u!1 &1886920930
 GameObject:
   m_ObjectHideFlags: 0
@@ -23099,6 +23341,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &1894323147
 GameObject:
   m_ObjectHideFlags: 0
@@ -23436,6 +23679,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &1930803730
 GameObject:
   m_ObjectHideFlags: 0
@@ -23490,11 +23734,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0116603de3155d64ab83442f18df3ca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1804322407}
-  effect: 0
-  jumpid: 0
-  process_state: 0
-  fadeOutClock: 0
 --- !u!114 &1930803736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23589,11 +23828,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a995cc61c1e589e4190f4ca238e892c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Puzzle
+  mode: 0
   fragments:
   - {fileID: 40209732}
   aims:
   - {fileID: 316104070}
   next: {fileID: 846935463}
+  nextList: []
+  activeList: []
 --- !u!1 &1960692930
 GameObject:
   m_ObjectHideFlags: 0
@@ -23653,6 +23895,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &1960692933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24095,7 +24338,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Drag
-  cam: {fileID: 0}
 --- !u!114 &1978813820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24132,6 +24374,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &1978813822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24372,6 +24615,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &2040512886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24386,11 +24630,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Effect_ObjectMove
   obj: {fileID: 846539953}
   endPoint: {fileID: 1271049715}
-  controlPoint: {fileID: 0}
   md: 0
   speed: 5
   effect: 0
   delayedClock: 0
+  playOnStart: 0
 --- !u!1 &2046283616
 GameObject:
   m_ObjectHideFlags: 0
@@ -24982,7 +25226,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Drag
-  cam: {fileID: 0}
 --- !u!114 &2109768499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25019,6 +25262,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &2109768501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25175,6 +25419,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!1 &2115657749
 GameObject:
   m_ObjectHideFlags: 0
@@ -25444,6 +25689,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  playOnStart: 1
 --- !u!114 &2119281857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25456,7 +25702,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::M_Drag
-  cam: {fileID: 0}
 --- !u!114 &2119281858
 MonoBehaviour:
   m_ObjectHideFlags: 0

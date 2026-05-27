@@ -13,7 +13,14 @@ public class GameManager : MonoBehaviour
     public float fillSpeed = 5f;
 
     [Header("完成触发 ⭐")]
-    public UnityEvent onCompleteEvent;   // 👈 Inspector 可绑定
+    public UnityEvent onCompleteEvent;
+
+    [Header("要统计的气泡 ⭐（手动拖）")]
+    public CloudClick[] targetClouds;
+
+    [Header("可选完成按钮 ⭐（未完成不可点击）")]
+    public Button completeButton;   // 可以拖 Button 进来
+    public UnityEvent onButtonClicked; // 按钮点击事件
 
     private int totalClouds;
     private int currentCount = 0;
@@ -25,14 +32,16 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        CloudClick[] clouds = FindObjectsOfType<CloudClick>();
-        totalClouds = clouds.Length;
+        // ✅ 只统计你拖进来的气泡
+        totalClouds = targetClouds.Length;
 
-        foreach (var cloud in clouds)
+        foreach (var cloud in targetClouds)
         {
-            cloud.onCloudClicked += OnCloudClicked;
+            if (cloud != null)
+                cloud.onCloudClicked += OnCloudClicked;
         }
 
+        // 初始化进度条
         if (progressFill != null)
         {
             progressFill.type = Image.Type.Filled;
@@ -41,8 +50,20 @@ public class GameManager : MonoBehaviour
             progressFill.fillAmount = 0f;
         }
 
+        // 初始化结果面板
         if (resultImage != null)
             resultImage.SetActive(false);
+
+        // 初始化按钮
+        if (completeButton != null)
+        {
+            completeButton.interactable = false; // 初始不可点击
+            completeButton.onClick.AddListener(() =>
+            {
+                if (isFinished)
+                    onButtonClicked?.Invoke(); // 完成后才执行按钮事件
+            });
+        }
     }
 
     void Update()
@@ -65,6 +86,7 @@ public class GameManager : MonoBehaviour
         currentCount++;
         targetProgress = (float)currentCount / totalClouds;
 
+        // ⭐ 完成后触发
         if (currentCount >= totalClouds)
         {
             OnComplete();
@@ -75,13 +97,17 @@ public class GameManager : MonoBehaviour
     {
         isFinished = true;
 
+        // 显示结果
         if (resultImage != null)
             resultImage.SetActive(true);
 
-        // ⭐ 触发事件
+        // 触发事件
         onCompleteEvent?.Invoke();
 
-        // 可选：自动下一关
+        // ✅ 按钮可点击
+        if (completeButton != null)
+            completeButton.interactable = true;
+
         Invoke(nameof(LoadNextScene), 1f);
     }
 
