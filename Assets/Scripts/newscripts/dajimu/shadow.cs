@@ -10,9 +10,6 @@ public class UIDragShadow : MonoBehaviour
     [Header("阴影颜色")]
     public Color shadowColor = new Color(0, 0, 0, 0.2f);
 
-    [Header("⭐Button控制")]
-    public bool disableByButton = true;
-
     private RectTransform rect;
     private RectTransform shadow;
     private Image shadowImage;
@@ -34,6 +31,7 @@ public class UIDragShadow : MonoBehaviour
     {
         StartCoroutine(Init());
 
+        // ⭐⭐⭐ 监听拼图完成
         if (piece != null)
         {
             piece.onPlaced += OnPuzzlePlaced;
@@ -42,8 +40,10 @@ public class UIDragShadow : MonoBehaviour
 
     IEnumerator Init()
     {
-        yield return null;
+        yield return null; // 等UI初始化
+
         CreateShadow();
+
         isInitialized = true;
     }
 
@@ -73,6 +73,7 @@ public class UIDragShadow : MonoBehaviour
     {
         if (!isInitialized || shadow == null || isDisabled) return;
 
+        // ⭐ Appear 兼容（物体隐藏就关）
         if (!gameObject.activeInHierarchy)
         {
             shadow.gameObject.SetActive(false);
@@ -81,6 +82,7 @@ public class UIDragShadow : MonoBehaviour
 
         float baseAlpha = originalImage != null ? originalImage.color.a : 1f;
 
+        // ⭐ 完全透明也隐藏
         if (baseAlpha <= 0.01f)
         {
             shadow.gameObject.SetActive(false);
@@ -89,16 +91,20 @@ public class UIDragShadow : MonoBehaviour
 
         shadow.gameObject.SetActive(true);
 
+        // ⭐ 同步形状（不会变形）
         shadow.sizeDelta = rect.sizeDelta;
         shadow.localScale = rect.localScale;
         shadow.rotation = rect.rotation;
 
+        // ⭐ 位置
         shadow.anchoredPosition = rect.anchoredPosition + offset;
 
+        // ⭐ 透明度跟随
         Color c = shadowColor;
         c.a *= baseAlpha;
         shadowImage.color = c;
 
+        // ⭐⭐⭐ 层级锁死（永远在下面）
         SyncLayer();
     }
 
@@ -110,28 +116,10 @@ public class UIDragShadow : MonoBehaviour
         shadow.SetSiblingIndex(Mathf.Max(0, index - 1));
     }
 
-    // ⭐⭐⭐ 拼图完成 → 关闭自己 + 所有子物体阴影
+    // ⭐⭐⭐ 拼图完成时调用（核心）
     void OnPuzzlePlaced(PuzzlePiece p)
     {
-        UIDragShadow[] all = GetComponentsInChildren<UIDragShadow>(true);
-
-        foreach (var s in all)
-        {
-            s.DisableShadow();
-        }
-    }
-
-    // ⭐ Button调用
-    public void DisableShadowByButton()
-    {
-        if (!disableByButton) return;
-
-        UIDragShadow[] all = GetComponentsInChildren<UIDragShadow>(true);
-
-        foreach (var s in all)
-        {
-            s.DisableShadow();
-        }
+        DisableShadow();
     }
 
     void DisableShadow()
@@ -144,6 +132,7 @@ public class UIDragShadow : MonoBehaviour
 
     void OnDestroy()
     {
+        // ⭐ 防止内存残留
         if (piece != null)
         {
             piece.onPlaced -= OnPuzzlePlaced;
