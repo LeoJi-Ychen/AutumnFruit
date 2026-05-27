@@ -19,6 +19,8 @@ public class WaterGameplay : MonoBehaviour
     public RuntimeAnimatorController runtimeAnimatorController;
     public string idleName;
     public string playName;
+    [Header("进度条")]
+    public GameObject bar;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -26,6 +28,11 @@ public class WaterGameplay : MonoBehaviour
         progress = 0;
         InitGame();
         startButton.GetComponent<Button>().onClick.AddListener(StartGame);
+        if (bar != null)
+        {
+            bar.AddComponent<WaterProgressBar>();
+            bar.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -54,6 +61,11 @@ public class WaterGameplay : MonoBehaviour
         if(startState == 0)
         {
             startState = 1;
+            if (bar != null)
+            {
+                bar.SetActive(true);
+            }
+
             foreach (GameObject water in waterBubbles)
             {
                 water.SetActive(true);
@@ -82,6 +94,13 @@ public class WaterGameplay : MonoBehaviour
         {
             waterBubbles[progress].GetComponent<WaterBubble>().state = 1;
         }
+        if (waterBubbles.Count > 0)
+        {
+            if (bar)
+            {
+                bar.GetComponent<WaterProgressBar>().progress = ((float)(progress + 1)) / (float)waterBubbles.Count;
+            }          
+        }    
     }
     public void LoseGame()
     {
@@ -90,6 +109,11 @@ public class WaterGameplay : MonoBehaviour
         foreach (GameObject water in waterBubbles)
         {
             water.SetActive(false);
+        }
+        if (bar)
+        {
+            bar.GetComponent<WaterProgressBar>().progress = 0;
+            bar.SetActive(false);
         }
     }
     public void Win()
