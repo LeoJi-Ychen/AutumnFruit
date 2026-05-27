@@ -3,6 +3,7 @@ using UnityEngine;
 
 public interface IUF
 {
+    string ToChinese(int number);
     float SQ(float a);
     int SQ(int a);
     float Max(float a, float b, float c);
@@ -35,6 +36,7 @@ public interface IUF
     void LoadStructFromJson<T>(ref T data, string filePath);
     T LoadStructFromJson<T>(string filePath);
     T LoadResource<T>(string route, int id) where T : UnityEngine.Object;
+    T LoadResource<T>(string route, string name) where T : UnityEngine.Object;
     void AddText(GameObject obj, string content);
 
     void MoveByKey(GameObject role, float speed, int state);
@@ -58,4 +60,5 @@ public interface IUF
     bool InArea(Vector2 pos,Rect r);
     Vector2 MouseWorldPos();
     void EraseTexture(GameObject obj, float range, int mode = 0);//0-²Á³ýÄ£Ê½0
+    List<T> KeepIndices<T>(List<T> originalList, List<int> indicesToKeep);
 }

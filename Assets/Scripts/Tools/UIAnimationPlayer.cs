@@ -16,35 +16,38 @@ public class UIAnimationPlayer : IAnim
 
     public void AnimPlay(GameObject obj, int id, float dt)
     {
-        timer += dt;
-        if (timer > frameTime)
+        if(sprites.Count > 0)
         {
-            if (id == 0)
+            timer += dt;
+            if (timer > frameTime)
             {
-                frame += Mathf.CeilToInt(timer / frameTime);
-                if (frame > length[id] - 1)
+                if (id == 0)
                 {
-                    frame = 0;
+                    frame += Mathf.CeilToInt(timer / frameTime);
+                    if (frame > length[id] - 1)
+                    {
+                        frame = 0;
+                    }
                 }
+                else
+                {
+                    if (frame < length[id - 1])
+                    {
+                        frame = length[id - 1];
+                    }
+                    frame += Mathf.CeilToInt(timer / frameTime);
+                    if (frame > length[id] - 1)
+                    {
+                        frame = length[id - 1];
+                    }
+                }
+                timer = 0;
             }
-            else
+            if (sprites[frame] != null)
             {
-                if (frame < length[id - 1])
-                {
-                    frame = length[id - 1];
-                }
-                frame += Mathf.CeilToInt(timer / frameTime);
-                if (frame > length[id] - 1)
-                {
-                    frame = length[id - 1];
-                }
+                obj.GetComponent<Image>().sprite = sprites[frame];
             }
-            timer = 0;
-        }
-        if (sprites[frame] != null)
-        {
-            obj.GetComponent<Image>().sprite = sprites[frame];
-        }
+        }       
     }
     public void SetSprites(string route)
     {

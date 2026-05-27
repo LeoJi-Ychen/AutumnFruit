@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using TMPro;
@@ -9,6 +9,45 @@ using System.Data;
 
 public class UIFunctions:IUF
 {
+    private static readonly string[] chineseDigits = { "零", "一", "二", "三", "四", "五", "六", "七", "八", "九" };
+    private static readonly string[] chineseUnits = { "", "十", "百", "千", "万", "十", "百", "千", "亿" };
+    public string ToChinese(int number)
+    {
+        if (number == 0) return "零";
+
+        string result = "";
+        string numStr = number.ToString();
+        int length = numStr.Length;
+
+        for (int i = 0; i < length; i++)
+        {
+            int digit = numStr[i] - '0';
+            int unitIndex = length - 1 - i;
+            if (digit != 0)
+            {
+                result += chineseDigits[digit] + chineseUnits[unitIndex];
+            }
+            else
+            {
+                // 处理零：避免连续多个零，且万位、亿位要保留
+                if (!result.EndsWith("零") && unitIndex != 4 && unitIndex != 8)
+                {
+                    result += "零";
+                }
+                // 万位和亿位特殊处理
+                if (unitIndex == 4) result += "万";
+                if (unitIndex == 8) result += "亿";
+            }
+        }
+        // 清理末尾的零
+        result = result.TrimEnd('零');
+        // 处理"一十"开头简化为"十"
+        if (result.StartsWith("一十"))
+        {
+            result = result.Substring(1);
+        }
+        return result;
+    }
     public float SQ(float value)
     {
         return value * value;
@@ -130,14 +169,14 @@ public class UIFunctions:IUF
     public void LoadAllResources<T>(string route, List<T> list) where T : UnityEngine.Object
     {
         list.Clear();
-        // Resources ����ȫ��
+        // Resources ¼ÓÔØÈ«²¿
         T[] array = Resources.LoadAll<T>(route);
 
         if (array.Length == 0)
         {
             return;
         }
-        // ����������A��Z��
+        // °´Ãû³ÆÅÅÐò£¨A¡úZ£©
         list.AddRange(array.OrderBy(s => s.name));
     }
     public void ReadFile(string route, Component T)
@@ -168,35 +207,35 @@ public class UIFunctions:IUF
     public void SaveStructToJson<T>(T data, string filePath)
     {
         string path = Application.dataPath + @"/StreamingAssets/" + filePath + ".json";
-        // ��struct���л�ΪJSON�ַ���
+        // ½«structÐòÁÐ»¯ÎªJSON×Ö·û´®
         string jsonString = JsonUtility.ToJson(data);
 
-        // ��JSON�ַ���д���ļ�
+        // ½«JSON×Ö·û´®Ð´ÈëÎÄ¼þ
         File.WriteAllText(path, jsonString);
     }
     public void LoadStructFromJson<T>(ref T data, string filePath)
     {
         string path = Application.dataPath + @"/StreamingAssets/" + filePath + ".json";
-        // ���ļ���ȡJSON�ַ���
+        // ´ÓÎÄ¼þ¶ÁÈ¡JSON×Ö·û´®
         string jsonString = File.ReadAllText(path);
 
-        // ��JSON�ַ��������л�Ϊstruct
+        // ½«JSON×Ö·û´®·´ÐòÁÐ»¯Îªstruct
         data = JsonUtility.FromJson<T>(jsonString);
     }
     public T LoadStructFromJson<T>(string filePath)
     {
         string path = Application.dataPath + @"/StreamingAssets/" + filePath + ".json";
-        // ���ļ���ȡJSON�ַ���
+        // ´ÓÎÄ¼þ¶ÁÈ¡JSON×Ö·û´®
         string jsonString = File.ReadAllText(path);
 
-        // ��JSON�ַ��������л�Ϊstruct
+        // ½«JSON×Ö·û´®·´ÐòÁÐ»¯Îªstruct
         T data = JsonUtility.FromJson<T>(jsonString);
 
         return data;
     }
     public T LoadResource<T>(string route, int id) where T : UnityEngine.Object
     {
-        // Resources ����ȫ��
+        // Resources ¼ÓÔØÈ«²¿
         List<T> tlist = new List<T>();
         T[] array = Resources.LoadAll<T>(route);
 
@@ -204,9 +243,20 @@ public class UIFunctions:IUF
         {
             return null;
         }
-        // ����������A��Z��
+        // °´Ãû³ÆÅÅÐò£¨A¡úZ£©
         tlist.AddRange(array.OrderBy(s => s.name));
         return tlist[id];
+    }
+    public T LoadResource<T>(string route, string name) where T : UnityEngine.Object
+    {
+        T[] array = Resources.LoadAll<T>(route);
+
+        if (array.Length == 0)
+        {
+            return null;
+        }
+
+        return array.FirstOrDefault(s => s.name == name);
     }
     public void AddText(GameObject obj, string content)
     {
@@ -255,14 +305,21 @@ public class UIFunctions:IUF
     public void MoveByMouse(GameObject role, Vector3 offset, float speed)
     {
         Vector2 aimPos = Camera.main.ScreenToWorldPoint(Input.mousePosition) + offset;
-        if (Distance2(role, aimPos) < 0.02f * speed)
+        if (speed < 0)
         {
             role.transform.position = aimPos;
         }
         else
         {
-            role.transform.position += toVec3(Direction2(role, aimPos) * speed * Time.deltaTime);
-        }
+            if (Distance2(role, aimPos) < 0.02f * speed)
+            {
+                role.transform.position = aimPos;
+            }
+            else
+            {
+                role.transform.position += toVec3(Direction2(role, aimPos) * speed * Time.deltaTime);
+            }
+        }   
     }
     public void MoveToMouse(GameObject role, float speed)
     {
@@ -533,5 +590,19 @@ public class UIFunctions:IUF
         temporaryTexture.SetPixels(colors);
         temporaryTexture.Apply();
         obj.GetComponent<Image>().sprite = Sprite.Create(temporaryTexture, obj.GetComponent<Image>().sprite.rect, obj.GetComponent<Image>().sprite.pivot);
+    }
+    public List<T> KeepIndices<T>(List<T> originalList, List<int> indicesToKeep)
+    {
+        List<T> result = new List<T>(indicesToKeep.Count);
+
+        foreach (int index in indicesToKeep)
+        {
+            if (index >= 0 && index < originalList.Count)
+            {
+                result.Add(originalList[index]);
+            }
+        }
+
+        return result;
     }
 }
