@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class CursorManager : MonoBehaviour
 {
@@ -22,8 +24,7 @@ public class CursorManager : MonoBehaviour
         {
             targetCursor = pressCursor;
         }
-        else if (EventSystem.current != null &&
-                 EventSystem.current.IsPointerOverGameObject())
+        else if (IsHoveringInteractable())
         {
             targetCursor = hoverCursor;
         }
@@ -38,9 +39,45 @@ public class CursorManager : MonoBehaviour
         }
     }
 
+    bool IsHoveringInteractable()
+    {
+        if (EventSystem.current == null)
+            return false;
+
+        PointerEventData pointerData =
+            new PointerEventData(EventSystem.current);
+
+        pointerData.position = Input.mousePosition;
+
+        List<RaycastResult> results =
+            new List<RaycastResult>();
+
+        EventSystem.current.RaycastAll(pointerData, results);
+
+        foreach (RaycastResult result in results)
+        {
+            GameObject obj = result.gameObject;
+
+            // Unity Button
+            if (obj.GetComponent<Button>() != null)
+                return true;
+
+            // 你的拼图
+            if (obj.GetComponent<PuzzlePiece>() != null)
+                return true;
+
+            // 你的 CloudClick
+            if (obj.GetComponent<CloudClick>() != null)
+                return true;
+        }
+
+        return false;
+    }
+
     void SetCursor(Texture2D tex)
     {
         currentCursor = tex;
+
         Cursor.SetCursor(
             tex,
             Vector2.zero,
