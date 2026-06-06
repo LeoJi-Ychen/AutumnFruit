@@ -24617,7 +24617,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
-  playOnStart: 1
+  playOnStart: 0
 --- !u!1 &382689439
 GameObject:
   m_ObjectHideFlags: 0
@@ -48141,7 +48141,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
-  playOnStart: 1
+  playOnStart: 0
 --- !u!1 &1188321531
 GameObject:
   m_ObjectHideFlags: 0
@@ -56817,7 +56817,7 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
-  playOnStart: 1
+  playOnStart: 0
 --- !u!1 &1349476975
 GameObject:
   m_ObjectHideFlags: 0
