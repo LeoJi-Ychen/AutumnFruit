@@ -1725,9 +1725,7 @@ GameObject:
   - component: {fileID: 58941788}
   - component: {fileID: 58941787}
   - component: {fileID: 58941786}
-  - component: {fileID: 58941785}
   - component: {fileID: 58941784}
-  - component: {fileID: 58941783}
   m_Layer: 5
   m_Name: "\u53EF\u79FB\u52A8\u706B\u8F66"
   m_TagString: Untagged
@@ -1735,18 +1733,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &58941783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 58941782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf1a9d1e82dca144084a3e760cf31e6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Effect_LightAndDarkPlus
 --- !u!114 &58941784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1763,18 +1749,6 @@ MonoBehaviour:
   staticObj: {fileID: 0}
   triggerDistance: 0
   mode: 0
---- !u!114 &58941785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 58941782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::M_Drag
 --- !u!114 &58941786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3116,7 +3090,6 @@ GameObject:
   - component: {fileID: 124537098}
   - component: {fileID: 124537097}
   - component: {fileID: 124537096}
-  - component: {fileID: 124537094}
   - component: {fileID: 124537099}
   m_Layer: 5
   m_Name: "\u7A97\u5916"
@@ -3144,18 +3117,6 @@ RectTransform:
   m_AnchoredPosition: {x: -680, y: -185.76932}
   m_SizeDelta: {x: 1459.45, y: 1667.06}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &124537094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 124537090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0116603de3155d64ab83442f18df3ca2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &124537096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28093,8 +28054,6 @@ GameObject:
   - component: {fileID: 530260840}
   - component: {fileID: 530260839}
   - component: {fileID: 530260838}
-  - component: {fileID: 530260837}
-  - component: {fileID: 530260836}
   - component: {fileID: 530260835}
   - component: {fileID: 530260834}
   - component: {fileID: 530260833}
@@ -28172,30 +28131,6 @@ MonoBehaviour:
   endPoint: {fileID: 687155187}
   md: 0
   speed: 3
---- !u!114 &530260836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 530260831}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf1a9d1e82dca144084a3e760cf31e6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Effect_LightAndDarkPlus
---- !u!114 &530260837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 530260831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0116603de3155d64ab83442f18df3ca2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &530260838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28899,7 +28834,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563033394}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a599e47cc04bd6445a0cb2e8911c87e7, type: 3}
   m_Name: 
@@ -32068,7 +32003,6 @@ GameObject:
   - component: {fileID: 648374576}
   - component: {fileID: 648374575}
   - component: {fileID: 648374574}
-  - component: {fileID: 648374573}
   m_Layer: 5
   m_Name: 1
   m_TagString: Untagged
@@ -32076,18 +32010,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &648374573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 648374572}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7a6bea55442ad544b391af5b9cd1864, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Effect_Drag
 --- !u!114 &648374574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38167,7 +38089,6 @@ GameObject:
   - component: {fileID: 837800228}
   - component: {fileID: 837800227}
   - component: {fileID: 837800226}
-  - component: {fileID: 837800225}
   - component: {fileID: 837800224}
   - component: {fileID: 837800223}
   - component: {fileID: 837800222}
@@ -38245,18 +38166,6 @@ MonoBehaviour:
   endPoint: {fileID: 29691315}
   md: 0
   speed: 3
---- !u!114 &837800225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 837800220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf1a9d1e82dca144084a3e760cf31e6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Effect_LightAndDarkPlus
 --- !u!114 &837800226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38795,10 +38704,8 @@ GameObject:
   - component: {fileID: 857559109}
   - component: {fileID: 857559108}
   - component: {fileID: 857559107}
-  - component: {fileID: 857559106}
   - component: {fileID: 857559105}
   - component: {fileID: 857559104}
-  - component: {fileID: 857559103}
   m_Layer: 5
   m_Name: "\u7269\u54C1\u70B9\u51FB0"
   m_TagString: Untagged
@@ -38826,18 +38733,6 @@ RectTransform:
   m_AnchoredPosition: {x: 3086.5, y: -142.2}
   m_SizeDelta: {x: 81.87, y: 81.4}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &857559103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 857559101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7a6bea55442ad544b391af5b9cd1864, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Effect_Drag_LeafScatter
 --- !u!114 &857559104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38875,18 +38770,6 @@ MonoBehaviour:
   staticObj: {fileID: 1853302595}
   triggerDistance: 0
   mode: 0
---- !u!114 &857559106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 857559101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf1a9d1e82dca144084a3e760cf31e6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Effect_LightAndDarkPlus
 --- !u!114 &857559107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48667,7 +48550,6 @@ GameObject:
   - component: {fileID: 1224566913}
   - component: {fileID: 1224566912}
   - component: {fileID: 1224566911}
-  - component: {fileID: 1224566910}
   - component: {fileID: 1224566909}
   - component: {fileID: 1224566908}
   - component: {fileID: 1224566907}
@@ -48787,18 +48669,6 @@ MonoBehaviour:
   - {fileID: 605309973}
   effect: 0
   delay_time: 0
---- !u!114 &1224566910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224566904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf1a9d1e82dca144084a3e760cf31e6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Effect_LightAndDarkPlus
 --- !u!114 &1224566911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49050,7 +48920,6 @@ GameObject:
   - component: {fileID: 1239507806}
   - component: {fileID: 1239507805}
   - component: {fileID: 1239507804}
-  - component: {fileID: 1239507803}
   - component: {fileID: 1239507802}
   - component: {fileID: 1239507807}
   m_Layer: 5
@@ -49096,18 +48965,6 @@ MonoBehaviour:
   - {fileID: 672674562}
   effect: 0
   delay_time: 0
---- !u!114 &1239507803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1239507800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf1a9d1e82dca144084a3e760cf31e6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Effect_LightAndDarkPlus
 --- !u!114 &1239507804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67929,7 +67786,6 @@ GameObject:
   - component: {fileID: 1420602405}
   - component: {fileID: 1420602404}
   - component: {fileID: 1420602403}
-  - component: {fileID: 1420602402}
   - component: {fileID: 1420602401}
   - component: {fileID: 1420602400}
   - component: {fileID: 1420602399}
@@ -68027,18 +67883,6 @@ MonoBehaviour:
   - {fileID: 125783002}
   effect: 0
   delay_time: 0
---- !u!114 &1420602402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1420602396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf1a9d1e82dca144084a3e760cf31e6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Effect_LightAndDarkPlus
 --- !u!114 &1420602403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71059,7 +70903,6 @@ GameObject:
   - component: {fileID: 1497130677}
   - component: {fileID: 1497130682}
   - component: {fileID: 1497130681}
-  - component: {fileID: 1497130680}
   - component: {fileID: 1497130679}
   - component: {fileID: 1497130678}
   m_Layer: 5
@@ -71095,7 +70938,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1497130676}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a599e47cc04bd6445a0cb2e8911c87e7, type: 3}
   m_Name: 
@@ -71120,18 +70963,6 @@ MonoBehaviour:
   endPoint: {fileID: 687155187}
   md: 0
   speed: 3
---- !u!114 &1497130680
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1497130676}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf1a9d1e82dca144084a3e760cf31e6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Effect_LightAndDarkPlus
 --- !u!114 &1497130681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71182,7 +71013,6 @@ GameObject:
   - component: {fileID: 1501841214}
   - component: {fileID: 1501841213}
   - component: {fileID: 1501841212}
-  - component: {fileID: 1501841211}
   - component: {fileID: 1501841210}
   m_Layer: 5
   m_Name: "\u8001\u4EBA"
@@ -71231,18 +71061,6 @@ MonoBehaviour:
   initMode: 0
   obj: {fileID: 0}
   playOnStart: 1
---- !u!114 &1501841211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1501841208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0116603de3155d64ab83442f18df3ca2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1501841212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73801,10 +73619,7 @@ GameObject:
   - component: {fileID: 1581350296}
   - component: {fileID: 1581350295}
   - component: {fileID: 1581350294}
-  - component: {fileID: 1581350293}
-  - component: {fileID: 1581350292}
   - component: {fileID: 1581350291}
-  - component: {fileID: 1581350290}
   m_Layer: 5
   m_Name: "\u7968\u6839"
   m_TagString: Untagged
@@ -73812,18 +73627,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1581350290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1581350289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf1a9d1e82dca144084a3e760cf31e6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Effect_LightAndDarkPlus
 --- !u!114 &1581350291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73840,30 +73643,6 @@ MonoBehaviour:
   staticObj: {fileID: 99738071}
   triggerDistance: 0
   mode: 0
---- !u!114 &1581350292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1581350289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::M_Drag
---- !u!114 &1581350293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1581350289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0116603de3155d64ab83442f18df3ca2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1581350294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75775,9 +75554,7 @@ GameObject:
   - component: {fileID: 1668445571}
   - component: {fileID: 1668445570}
   - component: {fileID: 1668445569}
-  - component: {fileID: 1668445568}
   - component: {fileID: 1668445567}
-  - component: {fileID: 1668445566}
   m_Layer: 5
   m_Name: 1 (2)
   m_TagString: Untagged
@@ -75805,18 +75582,6 @@ RectTransform:
   m_AnchoredPosition: {x: 59, y: 312}
   m_SizeDelta: {x: 133.87, y: 133.87}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1668445566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1668445564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7a6bea55442ad544b391af5b9cd1864, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Effect_Drag
 --- !u!114 &1668445567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75833,18 +75598,6 @@ MonoBehaviour:
   staticObj: {fileID: 802337629}
   triggerDistance: 1
   mode: 0
---- !u!114 &1668445568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1668445564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::M_Drag
 --- !u!114 &1668445569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81161,7 +80914,6 @@ GameObject:
   - component: {fileID: 1719762675}
   - component: {fileID: 1719762680}
   - component: {fileID: 1719762679}
-  - component: {fileID: 1719762678}
   - component: {fileID: 1719762677}
   - component: {fileID: 1719762676}
   - component: {fileID: 1719762681}
@@ -81198,7 +80950,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719762674}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a599e47cc04bd6445a0cb2e8911c87e7, type: 3}
   m_Name: 
@@ -81223,18 +80975,6 @@ MonoBehaviour:
   endPoint: {fileID: 687155187}
   md: 0
   speed: 3
---- !u!114 &1719762678
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1719762674}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf1a9d1e82dca144084a3e760cf31e6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Effect_LightAndDarkPlus
 --- !u!114 &1719762679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81795,11 +81535,9 @@ GameObject:
   - component: {fileID: 1727045181}
   - component: {fileID: 1727045180}
   - component: {fileID: 1727045179}
-  - component: {fileID: 1727045178}
   - component: {fileID: 1727045177}
   - component: {fileID: 1727045176}
   - component: {fileID: 1727045175}
-  - component: {fileID: 1727045174}
   m_Layer: 5
   m_Name: "f\u7167\u7247"
   m_TagString: Untagged
@@ -81827,18 +81565,6 @@ RectTransform:
   m_AnchoredPosition: {x: -185.72, y: 118.94}
   m_SizeDelta: {x: 371.44, y: 549.2}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1727045174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1727045172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7a6bea55442ad544b391af5b9cd1864, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Effect_Drag_LeafScatter
 --- !u!114 &1727045175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81893,18 +81619,6 @@ MonoBehaviour:
   staticObj: {fileID: 1696486432}
   triggerDistance: 0
   mode: 0
---- !u!114 &1727045178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1727045172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0116603de3155d64ab83442f18df3ca2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1727045179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89456,9 +89170,7 @@ GameObject:
   - component: {fileID: 1820207308}
   - component: {fileID: 1820207307}
   - component: {fileID: 1820207306}
-  - component: {fileID: 1820207305}
   - component: {fileID: 1820207304}
-  - component: {fileID: 1820207303}
   m_Layer: 5
   m_Name: 1 (1)
   m_TagString: Untagged
@@ -89466,18 +89178,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1820207303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1820207302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7a6bea55442ad544b391af5b9cd1864, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Effect_Drag
 --- !u!114 &1820207304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89494,18 +89194,6 @@ MonoBehaviour:
   staticObj: {fileID: 475490720}
   triggerDistance: 1
   mode: 0
---- !u!114 &1820207305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1820207302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f33bac2f0e4b0444888c04780010a7c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::M_Drag
 --- !u!114 &1820207306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95482,7 +95170,6 @@ GameObject:
   - component: {fileID: 2016485898}
   - component: {fileID: 2016485897}
   - component: {fileID: 2016485896}
-  - component: {fileID: 2016485895}
   - component: {fileID: 2016485894}
   - component: {fileID: 2016485893}
   - component: {fileID: 2016485899}
@@ -95543,18 +95230,6 @@ MonoBehaviour:
   endPoint: {fileID: 2086754625}
   md: 0
   speed: 3
---- !u!114 &2016485895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2016485891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf1a9d1e82dca144084a3e760cf31e6b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Effect_LightAndDarkPlus
 --- !u!114 &2016485896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99024,7 +98699,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2131824638}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a599e47cc04bd6445a0cb2e8911c87e7, type: 3}
   m_Name: 
