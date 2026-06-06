@@ -30856,7 +30856,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 393641276}
         m_TargetAssemblyTypeName: SubtitleUI, Assembly-CSharp
         m_MethodName: PlaySubtitles
@@ -30868,7 +30868,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 1251232171}
         m_TargetAssemblyTypeName: SimpleAudioPlayer, Assembly-CSharp
         m_MethodName: 
@@ -31882,7 +31882,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 393641276}
         m_TargetAssemblyTypeName: SubtitleUI, Assembly-CSharp
         m_MethodName: PlaySubtitles
@@ -31894,7 +31894,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 1251232171}
         m_TargetAssemblyTypeName: SimpleAudioPlayer, Assembly-CSharp
         m_MethodName: 
@@ -70577,7 +70577,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 393641276}
         m_TargetAssemblyTypeName: SubtitleUI, Assembly-CSharp
         m_MethodName: PlaySubtitles
@@ -70589,7 +70589,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
       - m_Target: {fileID: 1251232171}
         m_TargetAssemblyTypeName: SimpleAudioPlayer, Assembly-CSharp
         m_MethodName: 
@@ -70818,7 +70818,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1492274957}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -97966,6 +97966,30 @@ MonoBehaviour:
       - m_Target: {fileID: 1441170021}
         m_TargetAssemblyTypeName: Effect_ObjectMove, Assembly-CSharp
         m_MethodName: Effect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 691740949}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 393641276}
+        m_TargetAssemblyTypeName: SubtitleUI, Assembly-CSharp
+        m_MethodName: PlaySubtitles
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
