@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\UnityProject\\AutumnFruit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\water\\waterbubble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|c:\\unityproject\\autumnfruit\\assets\\scripts\\water\\waterbubble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\water\\waterbubble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\effect\\effect_buttonlightanddark.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|c:\\unityproject\\autumnfruit\\assets\\scripts\\newscripts\\cloud\\cloudfloat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\newscripts\\cloud\\cloudfloat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newscripts\\cloud\\cloudfloat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -70,8 +70,7 @@
               "RelativeToolTip": "Assets\\Scripts\\water\\WaterGameplay.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAAACIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T13:08:30.829Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-27T13:08:30.829Z"
             },
             {
               "$type": "Document",
@@ -83,8 +82,7 @@
               "RelativeToolTip": "Assets\\Scripts\\newscripts\\cloud\\CloudFloat.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T16:36:37.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-27T16:36:37.298Z"
             },
             {
               "$type": "Document",
@@ -96,8 +94,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Effect\\Effect_ButtonLightAndDark.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T15:58:23.695Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-27T15:58:23.695Z"
             },
             {
               "$type": "Document",
@@ -107,7 +104,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\water\\WaterBubble.cs",
               "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\water\\WaterBubble.cs",
               "RelativeToolTip": "Assets\\Scripts\\water\\WaterBubble.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAgwEIAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-27T13:08:34.286Z",
               "EditorCaption": ""
@@ -122,8 +119,7 @@
               "RelativeToolTip": "Assets\\Scripts\\water\\WaterProgressBar.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwA0AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T16:25:53.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-27T16:25:53.423Z"
             },
             {
               "$type": "Document",
@@ -135,8 +131,7 @@
               "RelativeToolTip": "Assets\\Scripts\\newscripts\\qiehuan\\TransparencyController.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwEMAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T15:33:53.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-27T15:33:53.474Z"
             },
             {
               "$type": "Document",

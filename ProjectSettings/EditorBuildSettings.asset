@@ -6,19 +6,19 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Resources/Scenes/Release/StartScreen.unity
+    path: Assets/Scenes/Release/StartScreen.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Resources/Scenes/Release/Garden.unity
+    path: Assets/Scenes/Release/Garden.unity
     guid: 98227be1a15eae14184e6ba902943df8
   - enabled: 1
-    path: Assets/Resources/Scenes/Release/ChapterChoose.unity
+    path: Assets/Scenes/Release/ChapterChoose.unity
     guid: d2e8b26eb46559d418047d7bb6af0d24
   - enabled: 1
-    path: Assets/Resources/Scenes/Release/Creditor.unity
+    path: Assets/Scenes/Release/Creditor.unity
     guid: 95a492dee613151479b95dc7efb65a5a
   - enabled: 1
-    path: Assets/Resources/Scenes/Release/Chapter_0.unity
+    path: Assets/Scenes/Release/Chapter_0.unity
     guid: fb45f5f14160447469062cc860f4b668
   - enabled: 0
     path: Assets/Scenes/Release/StartScreen1.unity
@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Release/StartScreenTest.unity
     guid: c01ca5c0b2b02eb4585ca62337dd7861
   - enabled: 1
-    path: Assets/Resources/Scenes/Chapter_0_0.unity
+    path: Assets/Scenes/Chapter_0_0.unity
     guid: 435473b36c4fd8d48b97b1d04df5249a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
