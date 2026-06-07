@@ -1,16 +1,25 @@
 fileFormatVersion: 2
-guid: ecaf55efa84cf3b43971179b51d146f7
+guid: 922469ecf192d914aa4b267e8768fa38
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -828745135474653153
-    second: "\u56FE\u5C42 11_0"
+      213: 8815893764003685291
+    second: "\u7EC4 6_0"
   - first:
-      213: -5567893213094501571
-    second: "\u56FE\u5C42 11_1"
+      213: -5911112142119462357
+    second: "\u7EC4 6_1"
   - first:
-      213: -8776832068759911841
-    second: "\u56FE\u5C42 11_2"
+      213: 7114631267712160770
+    second: "\u7EC4 6_2"
+  - first:
+      213: 790415252573780084
+    second: "\u7EC4 6_3"
+  - first:
+      213: 560952734130543216
+    second: "\u7EC4 6_4"
+  - first:
+      213: 731683868756148069
+    second: "\u7EC4 6_5"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -30,7 +39,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -102,43 +111,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u56FE\u5C42 11_0"
+      name: "\u7EC4 6_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 55
-        height: 59
+        width: 300
+        height: 327
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f1843bea0b4bf74f0800000000000000
-      internalID: -828745135474653153
+      spriteID: ba365057ba8585a70800000000000000
+      internalID: 8815893764003685291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u56FE\u5C42 11_1"
+      name: "\u7EC4 6_1"
       rect:
         serializedVersion: 2
-        x: 58
-        y: 15
-        width: 41
-        height: 39
+        x: 298
+        y: 176
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d33a1366f9edab2b0800000000000000
-      internalID: -5567893213094501571
+      spriteID: b2a987d33d287fda0800000000000000
+      internalID: -5911112142119462357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u56FE\u5C42 11_2"
+      name: "\u7EC4 6_2"
       rect:
         serializedVersion: 2
-        x: 59
-        y: 3
-        width: 44
-        height: 24
+        x: 324
+        y: 17
+        width: 179
+        height: 318
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,8 +174,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f520f403cbd623680800000000000000
-      internalID: -8776832068759911841
+      spriteID: 204dedb617f3cb260800000000000000
+      internalID: 7114631267712160770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u7EC4 6_3"
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 163
+        width: 181
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 478f5b20c7e18fa00800000000000000
+      internalID: 790415252573780084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u7EC4 6_4"
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 17
+        width: 189
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07a92a52a87e8c700800000000000000
+      internalID: 560952734130543216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u7EC4 6_5"
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 0
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56ff71d1a96772a00800000000000000
+      internalID: 731683868756148069
       vertices: []
       indices: 
       edges: []
@@ -211,9 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\u56FE\u5C42 11_0": -828745135474653153
-      "\u56FE\u5C42 11_1": -5567893213094501571
-      "\u56FE\u5C42 11_2": -8776832068759911841
+      "\u7EC4 6_0": 8815893764003685291
+      "\u7EC4 6_1": -5911112142119462357
+      "\u7EC4 6_2": 7114631267712160770
+      "\u7EC4 6_3": 790415252573780084
+      "\u7EC4 6_4": 560952734130543216
+      "\u7EC4 6_5": 731683868756148069
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

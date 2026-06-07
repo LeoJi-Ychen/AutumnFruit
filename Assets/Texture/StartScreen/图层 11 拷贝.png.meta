@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 39c1170c061dabf489dc392b4de84ac9
+guid: cf52a57504c458948932f89167580e44
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2177854684628341053
-    second: "\u56FE\u5C42 10_0"
+      213: -3484995703866116227
+    second: "\u56FE\u5C42 11 \u62F7\u8D1D_0"
   - first:
-      213: -4433958370395074731
-    second: "\u56FE\u5C42 10_1"
+      213: 8888130334113665777
+    second: "\u56FE\u5C42 11 \u62F7\u8D1D_1"
   - first:
-      213: -4081595266761212712
-    second: "\u56FE\u5C42 10_2"
+      213: 831430310553087007
+    second: "\u56FE\u5C42 11 \u62F7\u8D1D_2"
   - first:
-      213: 796389630127029593
-    second: "\u56FE\u5C42 10_3"
+      213: 152407012469554317
+    second: "\u56FE\u5C42 11 \u62F7\u8D1D_3"
+  - first:
+      213: 593967216331994255
+    second: "\u56FE\u5C42 11 \u62F7\u8D1D_4"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -33,7 +36,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -105,43 +108,61 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u56FE\u5C42 10_0"
+      name: "\u56FE\u5C42 11 \u62F7\u8D1D_0"
       rect:
         serializedVersion: 2
         x: 0
+        y: 4
+        width: 166
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d773c432fdec2afc0800000000000000
+      internalID: -3484995703866116227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u56FE\u5C42 11 \u62F7\u8D1D_1"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f21832927bf85b70800000000000000
+      internalID: 8888130334113665777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u56FE\u5C42 11 \u62F7\u8D1D_2"
+      rect:
+        serializedVersion: 2
+        x: 169
         y: 0
-        width: 103
-        height: 80
+        width: 142
+        height: 158
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d3151b10c4b493e10800000000000000
-      internalID: 2177854684628341053
+      spriteID: f1c620c5675d98b00800000000000000
+      internalID: 831430310553087007
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u56FE\u5C42 10_1"
+      name: "\u56FE\u5C42 11 \u62F7\u8D1D_3"
       rect:
         serializedVersion: 2
-        x: 14
-        y: 79
-        width: 67
-        height: 27
+        x: 228
+        y: 8
+        width: 6
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 55f4bbfaa5a6772c0800000000000000
-      internalID: -4433958370395074731
+      spriteID: d8cb68fce557d1200800000000000000
+      internalID: 152407012469554317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u56FE\u5C42 10_2"
+      name: "\u56FE\u5C42 11 \u62F7\u8D1D_4"
       rect:
         serializedVersion: 2
-        x: 109
-        y: 0
-        width: 127
-        height: 99
+        x: 294
+        y: 9
+        width: 11
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,30 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8dc38c7eab24b57c0800000000000000
-      internalID: -4081595266761212712
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "\u56FE\u5C42 10_3"
-      rect:
-        serializedVersion: 2
-        x: 164
-        y: 58
-        width: 77
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 95db68e26285d0b00800000000000000
-      internalID: 796389630127029593
+      spriteID: f8432b949023e3800800000000000000
+      internalID: 593967216331994255
       vertices: []
       indices: 
       edges: []
@@ -236,10 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\u56FE\u5C42 10_0": 2177854684628341053
-      "\u56FE\u5C42 10_1": -4433958370395074731
-      "\u56FE\u5C42 10_2": -4081595266761212712
-      "\u56FE\u5C42 10_3": 796389630127029593
+      "\u56FE\u5C42 11 \u62F7\u8D1D_0": -3484995703866116227
+      "\u56FE\u5C42 11 \u62F7\u8D1D_1": 8888130334113665777
+      "\u56FE\u5C42 11 \u62F7\u8D1D_2": 831430310553087007
+      "\u56FE\u5C42 11 \u62F7\u8D1D_3": 152407012469554317
+      "\u56FE\u5C42 11 \u62F7\u8D1D_4": 593967216331994255
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
