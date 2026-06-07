@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aaf0e422cd64564395d12907a53b520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Effect_ChangeScene
-  SceneName: StartScreen
+  SceneName: Chapter_0_1
   effect: 1
   delay_time: 3
 --- !u!1 &7859494
