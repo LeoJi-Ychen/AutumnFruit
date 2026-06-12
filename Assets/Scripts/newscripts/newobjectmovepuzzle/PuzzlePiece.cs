@@ -16,6 +16,9 @@ public class PuzzlePiece : MonoBehaviour,
     public bool enableHover = true;
     public bool enableClickScale = true;
 
+    [Header("拖拽解锁")]
+    public bool dragEnabledAtStart = true;
+
     [Header("拼图目标")]
     public PuzzleTarget target;
     public float snapSpeed = 10f;
@@ -52,8 +55,10 @@ public class PuzzlePiece : MonoBehaviour,
     private bool isClicking = false;
     private bool isLocked = false;
 
-    // 防止重复触发
     private bool hasSnapped = false;
+
+    // 是否允许交互（拖拽、点击、悬停）
+    private bool canDrag;
 
     void Awake()
     {
@@ -65,6 +70,8 @@ public class PuzzlePiece : MonoBehaviour,
     {
         originalScale = transform.localScale;
         targetScale = originalScale;
+
+        canDrag = dragEnabledAtStart;
     }
 
     void Update()
@@ -80,7 +87,7 @@ public class PuzzlePiece : MonoBehaviour,
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if (isLocked) return;
+        if (!canDrag || isLocked) return;
 
         isPointerOver = true;
 
@@ -90,7 +97,7 @@ public class PuzzlePiece : MonoBehaviour,
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        if (isLocked) return;
+        if (!canDrag || isLocked) return;
 
         isPointerOver = false;
 
@@ -100,7 +107,7 @@ public class PuzzlePiece : MonoBehaviour,
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (isLocked) return;
+        if (!canDrag || isLocked) return;
 
         isClicking = true;
 
@@ -110,7 +117,7 @@ public class PuzzlePiece : MonoBehaviour,
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        if (isLocked) return;
+        if (!canDrag || isLocked) return;
 
         isClicking = false;
 
@@ -122,17 +129,14 @@ public class PuzzlePiece : MonoBehaviour,
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if (!enableDrag || isLocked) return;
+        if (!enableDrag || !canDrag || isLocked) return;
 
         isDragging = true;
-
-        // ❌ 注释掉原来的层级提升
-        // transform.SetAsLastSibling();
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        if (!enableDrag || isLocked) return;
+        if (!enableDrag || !canDrag || isLocked) return;
 
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
 
@@ -144,7 +148,7 @@ public class PuzzlePiece : MonoBehaviour,
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        if (!enableDrag || isLocked) return;
+        if (!enableDrag || !canDrag || isLocked) return;
 
         isDragging = false;
 
@@ -164,7 +168,6 @@ public class PuzzlePiece : MonoBehaviour,
         hasSnapped = true;
 
         Vector2 start = rectTransform.anchoredPosition;
-
         Vector2 end = rectTransform.parent.InverseTransformPoint(target.transform.position);
 
         float t = 0;
@@ -217,6 +220,38 @@ public class PuzzlePiece : MonoBehaviour,
         {
             yield return new WaitForSeconds(destroyDelay);
             Destroy(gameObject);
+        }
+    }
+
+    // ===== 外部控制 =====
+
+    public void EnableDrag()
+    {
+        canDrag = true;
+    }
+
+    public void DisableDrag()
+    {
+        canDrag = false;
+
+        isPointerOver = false;
+        isDragging = false;
+        isClicking = false;
+
+        targetScale = originalScale;
+    }
+
+    public void SetDragEnabled(bool value)
+    {
+        canDrag = value;
+
+        if (!value)
+        {
+            isPointerOver = false;
+            isDragging = false;
+            isClicking = false;
+
+            targetScale = originalScale;
         }
     }
 }
