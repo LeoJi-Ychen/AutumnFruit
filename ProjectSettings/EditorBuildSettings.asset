@@ -8,9 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Release/StartScreen.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 0
-    path: Assets/Scenes/Release/Garden.unity
-    guid: 98227be1a15eae14184e6ba902943df8
   - enabled: 1
     path: Assets/Scenes/Release/ChapterChoose.unity
     guid: d2e8b26eb46559d418047d7bb6af0d24
@@ -20,18 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Release/Chapter_0.unity
     guid: fb45f5f14160447469062cc860f4b668
-  - enabled: 0
-    path: Assets/Scenes/Release/StartScreen1.unity
-    guid: 0610464f52e863b45ab881b3d6726ca3
   - enabled: 1
     path: Assets/Scenes/Chapter_0_1_1.unity
     guid: 2e0875b009357ef4ea1a0e89f5a5d63d
-  - enabled: 0
-    path: Assets/Scenes/Release/StartScreen2.unity
-    guid: 4619017b085cc7b4394baa14b9b25342
-  - enabled: 0
-    path: Assets/Scenes/Release/StartScreenTest.unity
-    guid: c01ca5c0b2b02eb4585ca62337dd7861
+  - enabled: 1
+    path: Assets/Scenes/Chapter_0_1_2.unity
+    guid: a7edf8e3bae14354398d4834fad8d2f4
   - enabled: 1
     path: Assets/Scenes/Chapter_0_0.unity
     guid: 435473b36c4fd8d48b97b1d04df5249a
