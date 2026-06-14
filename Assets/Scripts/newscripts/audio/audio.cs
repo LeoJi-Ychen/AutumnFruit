@@ -25,17 +25,24 @@ public class SimpleAudioPlayer : MonoBehaviour
     public bool playOnlyOnce = false;
     private bool hasPlayed = false;
 
+    [Header("跨场景保留（BGM用）")]
+    public bool dontDestroyOnLoad = false;
+
+    [Header("播放完自动销毁（旁白用）")]
+    public bool destroyAfterFinish = false;
+
     [Header("BGM淡出时间")]
     public float fadeTime = 1f;
 
-    [Header("初始音量（关键🔥）")]
+    [Header("初始音量")]
     [Range(0f, 1f)]
     public float startVolume = 1f;
 
     private AudioSource audioSource;
 
-    // ⭐ 只控制BGM切换
+    // ⭐ BGM唯一控制
     private static SimpleAudioPlayer currentBGM;
+    private static SimpleAudioPlayer persistentBGM;
 
     void Awake()
     {
@@ -43,9 +50,29 @@ public class SimpleAudioPlayer : MonoBehaviour
         audioSource.playOnAwake = false;
 
         ApplySettings();
-
-        // ⭐ 只在初始化时设置一次音量
         audioSource.volume = startVolume;
+
+        // =========================
+        // 🎵 跨场景BGM逻辑
+        // =========================
+        if (dontDestroyOnLoad)
+        {
+            if (audioType == AudioType.BGM)
+            {
+                if (persistentBGM != null && persistentBGM != this)
+                {
+                    Destroy(gameObject);
+                    return;
+                }
+
+                persistentBGM = this;
+                DontDestroyOnLoad(gameObject);
+            }
+            else
+            {
+                DontDestroyOnLoad(gameObject);
+            }
+        }
     }
 
     void Start()
@@ -53,6 +80,18 @@ public class SimpleAudioPlayer : MonoBehaviour
         if (playOnStart)
         {
             Play();
+        }
+    }
+
+    void Update()
+    {
+        // ⭐ 旁白播放完自动销毁
+        if (destroyAfterFinish &&
+            audioType == AudioType.Voice &&
+            hasPlayed &&
+            !audioSource.isPlaying)
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -68,7 +107,7 @@ public class SimpleAudioPlayer : MonoBehaviour
         ApplySettings();
 
         // =========================
-        // 🎵 BGM（互相替换）
+        // 🎵 BGM（互相替换 + 跨场景）
         // =========================
         if (audioType == AudioType.BGM)
         {
@@ -79,7 +118,7 @@ public class SimpleAudioPlayer : MonoBehaviour
 
             currentBGM = this;
 
-            audioSource.volume = startVolume; // ⭐ 不再强制=1
+            audioSource.volume = startVolume;
             audioSource.Play();
             return;
         }

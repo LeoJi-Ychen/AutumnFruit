@@ -1726,6 +1726,7 @@ MonoBehaviour:
   enableDrag: 1
   enableHover: 1
   enableClickScale: 1
+  dragEnabledAtStart: 1
   target: {fileID: 1390990153}
   snapSpeed: 10
   manager: {fileID: 408965014}
@@ -2095,6 +2096,7 @@ MonoBehaviour:
   enableDrag: 1
   enableHover: 1
   enableClickScale: 0
+  dragEnabledAtStart: 1
   target: {fileID: 170331547}
   snapSpeed: 10
   manager: {fileID: 377251609}
@@ -4083,6 +4085,263 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 157501049}
+  m_CullTransparentMesh: 1
+--- !u!1 &158627987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 158627988}
+  - component: {fileID: 158627992}
+  - component: {fileID: 158627991}
+  - component: {fileID: 158627990}
+  - component: {fileID: 158627989}
+  m_Layer: 5
+  m_Name: "\u6807\u9898 (3)"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &158627988
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158627987}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.009259999, y: 0.009259999, z: 0.009259999}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 789641962}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 280.94, y: 102.14}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &158627989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158627987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f75f461ffee3e545ac74d8effa18125, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SimpleAudioPlayer
+  audioType: 0
+  clip: {fileID: 8300000, guid: 59a88ba2ac7cdff4590196f471a58a96, type: 3}
+  playOnStart: 1
+  loop: 1
+  playOnlyOnce: 0
+  dontDestroyOnLoad: 0
+  destroyAfterFinish: 0
+  fadeTime: 1
+  startVolume: 0.54
+--- !u!82 &158627990
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158627987}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &158627991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158627987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\u5E8F\u7AE0"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8115bb8a3996a0541ad58969c7410c3e, type: 2}
+  m_sharedMaterial: {fileID: -6971297563583394893, guid: 8115bb8a3996a0541ad58969c7410c3e, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4279049303
+  m_fontColor: {r: 0.33962262, g: 0.11111105, b: 0.049661797, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 60.85
+  m_fontSizeBase: 60.85
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 4
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 19.88
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -221.7938, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &158627992
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158627987}
   m_CullTransparentMesh: 1
 --- !u!1 &163360918
 GameObject:
@@ -26133,6 +26392,7 @@ MonoBehaviour:
   enableDrag: 1
   enableHover: 1
   enableClickScale: 1
+  dragEnabledAtStart: 1
   target: {fileID: 605477660}
   snapSpeed: 10
   manager: {fileID: 12162730}
@@ -26704,6 +26964,7 @@ MonoBehaviour:
   enableDrag: 1
   enableHover: 1
   enableClickScale: 1
+  dragEnabledAtStart: 1
   target: {fileID: 1413008020}
   snapSpeed: 10
   manager: {fileID: 2071255464}
@@ -30960,6 +31221,7 @@ MonoBehaviour:
   enableDrag: 1
   enableHover: 1
   enableClickScale: 1
+  dragEnabledAtStart: 1
   target: {fileID: 0}
   snapSpeed: 10
   manager: {fileID: 0}
@@ -32677,6 +32939,8 @@ MonoBehaviour:
   playOnStart: 0
   loop: 0
   playOnlyOnce: 1
+  dontDestroyOnLoad: 0
+  destroyAfterFinish: 0
   fadeTime: 1
   startVolume: 1
 --- !u!82 &646302724
@@ -34160,6 +34424,8 @@ MonoBehaviour:
   playOnStart: 0
   loop: 0
   playOnlyOnce: 1
+  dontDestroyOnLoad: 0
+  destroyAfterFinish: 0
   fadeTime: 1
   startVolume: 1
 --- !u!82 &677710768
@@ -35234,6 +35500,8 @@ MonoBehaviour:
   playOnStart: 0
   loop: 0
   playOnlyOnce: 1
+  dontDestroyOnLoad: 0
+  destroyAfterFinish: 0
   fadeTime: 1
   startVolume: 1
 --- !u!82 &691740949
@@ -37474,6 +37742,7 @@ MonoBehaviour:
   enableDrag: 1
   enableHover: 1
   enableClickScale: 1
+  dragEnabledAtStart: 1
   target: {fileID: 2957421}
   snapSpeed: 10
   manager: {fileID: 2071255464}
@@ -37989,6 +38258,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1324721158}
+  - {fileID: 158627988}
   - {fileID: 1921073742}
   - {fileID: 677710766}
   - {fileID: 691740947}
@@ -38525,6 +38795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c416cd02a764caf4f92e3905642692f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Effect_CameraMove
+  playOnStart: 0
   endPoint: {fileID: 0}
   md: 0
   speed: 1.24
@@ -41019,6 +41290,7 @@ MonoBehaviour:
   enableDrag: 1
   enableHover: 1
   enableClickScale: 1
+  dragEnabledAtStart: 1
   target: {fileID: 722509806}
   snapSpeed: 10
   manager: {fileID: 12162730}
@@ -42231,6 +42503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c416cd02a764caf4f92e3905642692f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Effect_CameraMove
+  playOnStart: 0
   endPoint: {fileID: 0}
   md: 0
   speed: 3
@@ -43095,6 +43368,7 @@ MonoBehaviour:
   enableDrag: 1
   enableHover: 1
   enableClickScale: 1
+  dragEnabledAtStart: 1
   target: {fileID: 1003054209}
   snapSpeed: 10
   manager: {fileID: 314426217}
@@ -46226,6 +46500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c416cd02a764caf4f92e3905642692f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Effect_CameraMove
+  playOnStart: 0
   endPoint: {fileID: 228417455}
   md: 0
   speed: 3
@@ -46638,6 +46913,7 @@ RectTransform:
   - {fileID: 1861890490}
   - {fileID: 1598764832}
   - {fileID: 1492274958}
+  - {fileID: 1593112400}
   - {fileID: 2024275927}
   - {fileID: 1136690826}
   - {fileID: 1089359149}
@@ -47361,6 +47637,7 @@ MonoBehaviour:
   enableDrag: 1
   enableHover: 1
   enableClickScale: 1
+  dragEnabledAtStart: 1
   target: {fileID: 15949792}
   snapSpeed: 10
   manager: {fileID: 646119107}
@@ -47622,6 +47899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c416cd02a764caf4f92e3905642692f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Effect_CameraMove
+  playOnStart: 0
   endPoint: {fileID: 687155187}
   md: 0
   speed: 1.76
@@ -50570,6 +50848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c416cd02a764caf4f92e3905642692f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Effect_CameraMove
+  playOnStart: 0
   endPoint: {fileID: 704205544}
   md: 0
   speed: 3
@@ -57956,7 +58235,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1324721158
 RectTransform:
   m_ObjectHideFlags: 0
@@ -57989,10 +58268,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleAudioPlayer
   audioType: 0
-  clip: {fileID: 8300000, guid: 59a88ba2ac7cdff4590196f471a58a96, type: 3}
+  clip: {fileID: 8300000, guid: 427321cd0bbfb2346b3234d69a7a4bfe, type: 3}
   playOnStart: 1
   loop: 1
   playOnlyOnce: 0
+  dontDestroyOnLoad: 0
+  destroyAfterFinish: 0
   fadeTime: 1
   startVolume: 0.54
 --- !u!82 &1324721160
@@ -76206,6 +76487,142 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1593112399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1593112400}
+  - component: {fileID: 1593112404}
+  - component: {fileID: 1593112403}
+  - component: {fileID: 1593112402}
+  - component: {fileID: 1593112401}
+  m_Layer: 5
+  m_Name: "\u811A\u53701 (2)"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1593112400
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593112399}
+  m_LocalRotation: {x: -0, y: -0, z: 0.9744786, w: 0.22448047}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1106120147}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -205.945}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 515, y: -377}
+  m_SizeDelta: {x: 163.09, y: 135.1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1593112401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593112399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4588bda5ebdd7d498f0667982b9394d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIDragShadow
+  offset: {x: 8, y: -8}
+  shadowColor: {r: 0, g: 0, b: 0, a: 0.2}
+  disableByButton: 1
+--- !u!114 &1593112402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593112399}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1593112403}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1593112403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593112399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.9137255}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 6093221106785045028, guid: 3f9cfd6d6ff102b46b4c22d4dd79cb45, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1593112404
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593112399}
+  m_CullTransparentMesh: 1
 --- !u!1 &1598764831
 GameObject:
   m_ObjectHideFlags: 0
@@ -83676,6 +84093,7 @@ MonoBehaviour:
   enableDrag: 1
   enableHover: 1
   enableClickScale: 1
+  dragEnabledAtStart: 1
   target: {fileID: 563033401}
   snapSpeed: 10
   manager: {fileID: 2045548565}
@@ -83939,6 +84357,7 @@ MonoBehaviour:
   enableDrag: 1
   enableHover: 1
   enableClickScale: 1
+  dragEnabledAtStart: 1
   target: {fileID: 1288526223}
   snapSpeed: 10
   manager: {fileID: 12162730}
@@ -84360,6 +84779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c416cd02a764caf4f92e3905642692f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Effect_CameraMove
+  playOnStart: 0
   endPoint: {fileID: 0}
   md: 0
   speed: 0
@@ -94963,6 +95383,7 @@ MonoBehaviour:
   enableDrag: 1
   enableHover: 1
   enableClickScale: 1
+  dragEnabledAtStart: 1
   target: {fileID: 392548410}
   snapSpeed: 10
   manager: {fileID: 2071255464}
@@ -95165,6 +95586,8 @@ MonoBehaviour:
   playOnStart: 0
   loop: 1
   playOnlyOnce: 0
+  dontDestroyOnLoad: 0
+  destroyAfterFinish: 0
   fadeTime: 1
   startVolume: 0.49
 --- !u!82 &1921073744
@@ -97247,6 +97670,7 @@ MonoBehaviour:
   enableDrag: 1
   enableHover: 1
   enableClickScale: 1
+  dragEnabledAtStart: 1
   target: {fileID: 690799504}
   snapSpeed: 10
   manager: {fileID: 351005196}
@@ -99069,6 +99493,7 @@ MonoBehaviour:
   enableDrag: 1
   enableHover: 1
   enableClickScale: 1
+  dragEnabledAtStart: 1
   target: {fileID: 0}
   snapSpeed: 10
   manager: {fileID: 0}
