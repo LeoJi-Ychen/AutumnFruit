@@ -70563,7 +70563,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControlChildTransparent
   benchmark: {fileID: 0}
-  except: []
+  except:
+  - {fileID: 2059625244}
 --- !u!114 &1765680621
 MonoBehaviour:
   m_ObjectHideFlags: 0
