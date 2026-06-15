@@ -3,7 +3,23 @@
   "WorkspaceRootPath": "C:\\UnityProject\\AutumnFruit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|c:\\unityproject\\autumnfruit\\assets\\scripts\\water\\waterbubble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|c:\\unityproject\\autumnfruit\\assets\\scripts\\audio\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audio\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|c:\\unityproject\\autumnfruit\\assets\\scripts\\audio\\volumesetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audio\\volumesetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|c:\\unityproject\\autumnfruit\\assets\\scripts\\newscripts\\qiehuan\\controlchildtransparent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newscripts\\qiehuan\\controlchildtransparent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\button\\button_setactive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\button\\button_setactive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\water\\waterbubble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\water\\waterbubble.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -50,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -63,6 +79,57 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "VolumeSetting.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Audio\\VolumeSetting.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\VolumeSetting.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Audio\\VolumeSetting.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Audio\\VolumeSetting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T13:34:47.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AudioManager.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Audio\\AudioManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\AudioManager.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Audio\\AudioManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Audio\\AudioManager.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T13:33:27.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ControlChildTransparent.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\qiehuan\\ControlChildTransparent.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\qiehuan\\ControlChildTransparent.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\qiehuan\\ControlChildTransparent.cs",
+              "RelativeToolTip": "Assets\\Scripts\\newscripts\\qiehuan\\ControlChildTransparent.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAcwCwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T13:11:01.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Button_SetActive.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Button\\Button_SetActive.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Button\\Button_SetActive.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Button\\Button_SetActive.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Button\\Button_SetActive.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABgAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T13:01:25.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "WaterGameplay.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\water\\WaterGameplay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\water\\WaterGameplay.cs",
@@ -74,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "CloudFloat.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\cloud\\CloudFloat.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\cloud\\CloudFloat.cs",
@@ -86,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Effect_ButtonLightAndDark.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Effect\\Effect_ButtonLightAndDark.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Effect\\Effect_ButtonLightAndDark.cs",
@@ -98,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "WaterBubble.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\water\\WaterBubble.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\water\\WaterBubble.cs",
@@ -106,12 +173,11 @@
               "RelativeToolTip": "Assets\\Scripts\\water\\WaterBubble.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T13:08:34.286Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-27T13:08:34.286Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "WaterProgressBar.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\water\\WaterProgressBar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\water\\WaterProgressBar.cs",
@@ -123,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "TransparencyController.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\qiehuan\\TransparencyController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\qiehuan\\TransparencyController.cs",
@@ -135,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "ChangeActive.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\dajimu\\ChangeActive.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\dajimu\\ChangeActive.cs",
@@ -147,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "TranstionEffect.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\qiehuan\\TranstionEffect.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\qiehuan\\TranstionEffect.cs",
@@ -159,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "BubbleClickGameplay.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Effect\\BubbleClickGameplay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Effect\\BubbleClickGameplay.cs",
@@ -171,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "TranstionEffect.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Effect\\TranstionEffect.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Effect\\TranstionEffect.cs",

@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.UI;
 public class Appear : MonoBehaviour
 {
     float transparent;
@@ -15,6 +16,7 @@ public class Appear : MonoBehaviour
     public GameObject obj;
     float timer;
     int state;
+    public UnityEvent onAllComplete;
     public enum RaycastMode
     {
         ConditionalActive,
@@ -183,6 +185,7 @@ public class Appear : MonoBehaviour
         }
         if (timer >= clock)
         {
+            onAllComplete?.Invoke();
             Destroy(this.gameObject);
         }
     }

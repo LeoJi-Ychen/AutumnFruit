@@ -273,6 +273,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!114 &4252795
 MonoBehaviour:
@@ -398,6 +401,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &12162728
 GameObject:
@@ -639,6 +645,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &15949792
 MonoBehaviour:
@@ -863,6 +872,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 1
   obj: {fileID: 846935463}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &29691315
 GameObject:
@@ -1271,6 +1283,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &45600669
 MonoBehaviour:
@@ -1758,7 +1773,10 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
-  playOnStart: 0
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  playOnStart: 1
 --- !u!1 &58941782
 GameObject:
   m_ObjectHideFlags: 0
@@ -2042,7 +2060,10 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
-  playOnStart: 0
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  playOnStart: 1
 --- !u!114 &61203153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2343,6 +2364,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &74141698
 MonoBehaviour:
@@ -2575,6 +2599,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &85592870
 GameObject:
@@ -3034,6 +3061,7 @@ GameObject:
   - component: {fileID: 118831317}
   - component: {fileID: 118831316}
   - component: {fileID: 118831315}
+  - component: {fileID: 118831319}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3098,7 +3126,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
+  m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -3126,6 +3154,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &118831319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118831314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 692929f003caf8545bc6f18e23e23197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FPSCounter
+  test: 1
 --- !u!1 &124537090
 GameObject:
   m_ObjectHideFlags: 0
@@ -3267,6 +3308,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &125228986
 GameObject:
@@ -3657,6 +3701,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &144834488
 GameObject:
@@ -3733,6 +3780,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &144834492
 MonoBehaviour:
@@ -3905,6 +3955,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &156148471
 MonoBehaviour:
@@ -4003,6 +4056,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &157501052
 MonoBehaviour:
@@ -4484,6 +4540,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &167919177
 GameObject:
@@ -4678,6 +4737,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &170248048
 MonoBehaviour:
@@ -4882,6 +4944,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &170331545
 MonoBehaviour:
@@ -5134,6 +5199,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &174885116
 MonoBehaviour:
@@ -5555,6 +5623,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!114 &199446442
 MonoBehaviour:
@@ -5787,6 +5858,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &200094066
 MonoBehaviour:
@@ -6374,6 +6448,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!1 &216575406
 GameObject:
@@ -6695,6 +6772,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &228417455
 GameObject:
@@ -7217,6 +7297,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!114 &255856697
 MonoBehaviour:
@@ -12748,6 +12831,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &279360077
 MonoBehaviour:
@@ -12896,6 +12982,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &300684998
 GameObject:
@@ -13081,6 +13170,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!1 &301295879
 GameObject:
@@ -13457,6 +13549,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &303895133
 GameObject:
@@ -13643,6 +13738,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &314426215
 GameObject:
@@ -13993,6 +14091,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &331935631
 MonoBehaviour:
@@ -19505,6 +19606,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &358142681
 MonoBehaviour:
@@ -19764,6 +19868,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &360957055
 MonoBehaviour:
@@ -19905,6 +20012,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &361883074
 MonoBehaviour:
@@ -20085,6 +20195,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &366429769
 GameObject:
@@ -20493,6 +20606,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!1 &382689439
 GameObject:
@@ -21391,6 +21507,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!114 &416275155
 MonoBehaviour:
@@ -22173,6 +22292,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &457614793
 GameObject:
@@ -22249,6 +22371,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &457614797
 MonoBehaviour:
@@ -22457,6 +22582,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &458660402
 MonoBehaviour:
@@ -22627,6 +22755,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &475183547
 MonoBehaviour:
@@ -23591,6 +23722,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &528110599
 MonoBehaviour:
@@ -24473,6 +24607,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &555627103
 MonoBehaviour:
@@ -25650,6 +25787,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &605309976
 MonoBehaviour:
@@ -25768,6 +25908,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &605477657
 MonoBehaviour:
@@ -26190,7 +26333,22 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
-  playOnStart: 0
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 993672989}
+        m_TargetAssemblyTypeName: ControlChildTransparent, Assembly-CSharp
+        m_MethodName: Active
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  playOnStart: 1
 --- !u!1 &615806634
 GameObject:
   m_ObjectHideFlags: 0
@@ -26382,6 +26540,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &619582934
 MonoBehaviour:
@@ -26873,6 +27034,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &634191533
 MonoBehaviour:
@@ -28442,6 +28606,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &663426748
 MonoBehaviour:
@@ -28540,6 +28707,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!114 &667978173
 MonoBehaviour:
@@ -29576,6 +29746,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &682666392
 MonoBehaviour:
@@ -29818,6 +29991,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &687845961
 MonoBehaviour:
@@ -30982,6 +31158,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!114 &713479797
 MonoBehaviour:
@@ -31310,6 +31489,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &722509808
 MonoBehaviour:
@@ -31930,6 +32112,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &751997446
 MonoBehaviour:
@@ -32237,6 +32422,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &777534978
 GameObject:
@@ -32601,6 +32789,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!95 &784394627
 Animator:
@@ -32864,6 +33055,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &801354189
 MonoBehaviour:
@@ -33024,6 +33218,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &801443046
 MonoBehaviour:
@@ -33220,6 +33417,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &813607801
 MonoBehaviour:
@@ -33448,6 +33648,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &819461554
 MonoBehaviour:
@@ -33583,6 +33786,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!1 &826209763
 GameObject:
@@ -33693,6 +33899,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &831227430
 GameObject:
@@ -33772,6 +33981,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &831227434
 MonoBehaviour:
@@ -34288,6 +34500,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &839856709
 MonoBehaviour:
@@ -34554,6 +34769,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 846935463}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &856828514
 GameObject:
@@ -34707,6 +34925,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &857559105
 MonoBehaviour:
@@ -35790,6 +36011,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &908415743
 GameObject:
@@ -36308,6 +36532,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!114 &925702636
 MonoBehaviour:
@@ -36421,6 +36648,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &925841309
 MonoBehaviour:
@@ -36885,6 +37115,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &937685213
 GameObject:
@@ -37295,6 +37528,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!114 &946431638
 MonoBehaviour:
@@ -37678,7 +37914,10 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
-  playOnStart: 0
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  playOnStart: 1
 --- !u!1 &958886158
 GameObject:
   m_ObjectHideFlags: 0
@@ -38082,6 +38321,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &969838989
 MonoBehaviour:
@@ -38703,6 +38945,7 @@ GameObject:
   - component: {fileID: 993672987}
   - component: {fileID: 993672988}
   - component: {fileID: 993672989}
+  - component: {fileID: 993672990}
   m_Layer: 5
   m_Name: "\u79CD\u5B50\u76D2"
   m_TagString: Untagged
@@ -38880,12 +39123,37 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993672981}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ea49d4d817be4147aee0b8228fd018f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControlChildTransparent
   benchmark: {fileID: 0}
+  except: []
+--- !u!114 &993672990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993672981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 768a21a19be51064dad58539579d09e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Effect_Appear
+  clock: 4
+  effect: 0
+  delayedClock: 0
+  raycastMode: 0
+  threshold_transparent: 0
+  finalMode: 0
+  initMode: 0
+  obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  playOnStart: 0
 --- !u!1 &998572818
 GameObject:
   m_ObjectHideFlags: 0
@@ -39028,6 +39296,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!95 &998572825
 Animator:
@@ -39664,6 +39935,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1041626576
 MonoBehaviour:
@@ -39844,6 +40118,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &1051495560
 GameObject:
@@ -40145,6 +40422,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!95 &1061234561
 Animator:
@@ -41120,6 +41400,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1111864725
 MonoBehaviour:
@@ -41805,6 +42088,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1117733289
 MonoBehaviour:
@@ -42135,6 +42421,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1121324940
 MonoBehaviour:
@@ -42249,6 +42538,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1129558564
 MonoBehaviour:
@@ -42852,6 +43144,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1137275248
 MonoBehaviour:
@@ -43860,6 +44155,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1172726588
 MonoBehaviour:
@@ -44357,6 +44655,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!1 &1188321531
 GameObject:
@@ -44416,6 +44717,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1188321534
 MonoBehaviour:
@@ -45228,6 +45532,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1237126445
 MonoBehaviour:
@@ -45242,6 +45549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControlChildTransparent
   benchmark: {fileID: 0}
+  except: []
 --- !u!1 &1239507800
 GameObject:
   m_ObjectHideFlags: 0
@@ -45498,7 +45806,22 @@ MonoBehaviour:
   threshold_transparent: 0
   finalMode: 0
   initMode: 0
-  obj: {fileID: 0}
+  obj: {fileID: 1251232171}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1251232177}
+        m_TargetAssemblyTypeName: ControlChildTransparent, Assembly-CSharp
+        m_MethodName: Close
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   playOnStart: 1
 --- !u!114 &1251232177
 MonoBehaviour:
@@ -45513,6 +45836,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControlChildTransparent
   benchmark: {fileID: 0}
+  except:
+  - {fileID: 1975728068}
 --- !u!1 &1255138247
 GameObject:
   m_ObjectHideFlags: 0
@@ -46019,6 +46344,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &1274061990
 GameObject:
@@ -46079,6 +46407,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1274061993
 MonoBehaviour:
@@ -46295,6 +46626,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1278450620
 MonoBehaviour:
@@ -46444,6 +46778,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1278557072
 MonoBehaviour:
@@ -46771,6 +47108,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1288526225
 MonoBehaviour:
@@ -47202,6 +47542,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &1324171843
 GameObject:
@@ -47244,6 +47587,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1324171845
 MonoBehaviour:
@@ -47819,6 +48165,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1342210560
 MonoBehaviour:
@@ -48105,6 +48454,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!1 &1349476975
 GameObject:
@@ -48339,6 +48691,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &1371536638
 GameObject:
@@ -59304,6 +59659,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1415560031
 MonoBehaviour:
@@ -59593,6 +59951,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1427895453
 MonoBehaviour:
@@ -59935,6 +60296,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!95 &1434862606
 Animator:
@@ -60097,6 +60461,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1441170019
 MonoBehaviour:
@@ -60271,6 +60638,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1441878149
 MonoBehaviour:
@@ -60658,6 +61028,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &1447255360
 GameObject:
@@ -60809,6 +61182,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1460388729
 MonoBehaviour:
@@ -60909,6 +61285,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1461792452
 MonoBehaviour:
@@ -61779,6 +62158,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!114 &1483964605
 MonoBehaviour:
@@ -62857,6 +63239,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1501841212
 MonoBehaviour:
@@ -63165,6 +63550,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1507541758
 MonoBehaviour:
@@ -63676,6 +64064,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &1526884131
 GameObject:
@@ -63818,6 +64209,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &1528506802
 GameObject:
@@ -64545,6 +64939,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1548304525
 MonoBehaviour:
@@ -64949,6 +65346,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!1 &1558398717
 GameObject:
@@ -65009,6 +65409,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1558398720
 MonoBehaviour:
@@ -65205,6 +65608,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &1568922095
 GameObject:
@@ -66513,6 +66919,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1617131509
 MonoBehaviour:
@@ -66627,6 +67036,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1617184371
 MonoBehaviour:
@@ -66927,6 +67339,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &1625420167
 GameObject:
@@ -67664,6 +68079,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1679646984
 MonoBehaviour:
@@ -67841,6 +68259,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!1 &1710257501
 GameObject:
@@ -68264,6 +68685,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!114 &1721499762
 MonoBehaviour:
@@ -68531,6 +68955,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1723754771
 MonoBehaviour:
@@ -68689,6 +69116,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1724084200
 MonoBehaviour:
@@ -69094,6 +69524,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!95 &1734868711
 Animator:
@@ -69453,6 +69886,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1747018082
 MonoBehaviour:
@@ -69850,6 +70286,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1758536993
 MonoBehaviour:
@@ -70086,6 +70525,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!114 &1765680619
 MonoBehaviour:
@@ -70121,6 +70563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControlChildTransparent
   benchmark: {fileID: 0}
+  except: []
 --- !u!114 &1765680621
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70438,6 +70881,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1780864471
 MonoBehaviour:
@@ -70535,6 +70981,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1781755115
 MonoBehaviour:
@@ -71034,6 +71483,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!114 &1797233257
 MonoBehaviour:
@@ -71265,6 +71717,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1803912467
 MonoBehaviour:
@@ -71627,6 +72082,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1820235603
 MonoBehaviour:
@@ -72357,6 +72815,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!222 &1853416277
 CanvasRenderer:
@@ -72607,6 +73068,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1861890492
 MonoBehaviour:
@@ -73039,6 +73503,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &1875272575
 GameObject:
@@ -73209,6 +73676,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!114 &1878793839
 MonoBehaviour:
@@ -73580,6 +74050,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1886548612
 MonoBehaviour:
@@ -73746,6 +74219,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1895324099
 MonoBehaviour:
@@ -74262,6 +74738,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &1917703624
 GameObject:
@@ -74907,6 +75386,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &1940475518
 GameObject:
@@ -75059,6 +75541,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &1959024015
 GameObject:
@@ -75100,6 +75585,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1959024017
 MonoBehaviour:
@@ -75324,6 +75812,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!114 &1971268311
 MonoBehaviour:
@@ -75575,6 +76066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControlChildTransparent
   benchmark: {fileID: 0}
+  except: []
 --- !u!114 &1975728073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75595,6 +76087,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &1975728074
 MonoBehaviour:
@@ -75847,6 +76342,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &1985486177
 GameObject:
@@ -76557,6 +77055,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &2010406172
 MonoBehaviour:
@@ -76929,6 +77430,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &2012821076
 MonoBehaviour:
@@ -77957,7 +78461,10 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
-  playOnStart: 0
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  playOnStart: 1
 --- !u!1 &2045548558
 GameObject:
   m_ObjectHideFlags: 0
@@ -78193,6 +78700,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!1 &2061122569
 GameObject:
@@ -78269,6 +78779,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &2061122573
 MonoBehaviour:
@@ -79587,6 +80100,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &2092385649
 MonoBehaviour:
@@ -79601,6 +80117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControlChildTransparent
   benchmark: {fileID: 0}
+  except: []
 --- !u!1 &2093115286
 GameObject:
   m_ObjectHideFlags: 0
@@ -79776,6 +80293,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 993672990}
+        m_TargetAssemblyTypeName: Effect_Appear, Assembly-CSharp
+        m_MethodName: TriggerEffect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &2093115293
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -79834,6 +80363,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &2093115296
 MonoBehaviour:
@@ -80195,6 +80727,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!114 &2103106427
 MonoBehaviour:
@@ -80544,6 +81079,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!114 &2127121332
 MonoBehaviour:
@@ -80834,6 +81372,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!114 &2131824649
 MonoBehaviour:
@@ -80848,6 +81389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ControlChildTransparent
   benchmark: {fileID: 0}
+  except: []
 --- !u!1 &2134645734
 GameObject:
   m_ObjectHideFlags: 0
@@ -80944,6 +81486,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
