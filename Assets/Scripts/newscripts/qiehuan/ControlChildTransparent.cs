@@ -6,6 +6,7 @@ using TMPro;
 public class ControlChildTransparent : MonoBehaviour
 {
     public GameObject benchmark;
+    public  List<GameObject> except = new List<GameObject>();
     List<GameObject> childs = new List<GameObject>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,6 +17,23 @@ public class ControlChildTransparent : MonoBehaviour
         }
         GetChilds(this.gameObject.transform);
         childs.Remove(benchmark);
+        foreach (GameObject e in except)
+        {
+            if (e != null)
+            {
+                for (int i = 0; i < e.transform.childCount; i++)
+                {
+                    if (childs.Contains(e.transform.GetChild(i).gameObject))
+                    {
+                        childs.Remove(e.transform.GetChild(i).gameObject);
+                    }
+                }
+                if (childs.Contains(e))
+                {
+                    childs.Remove(e);
+                }
+            }
+        } 
         SetTransparent();
     }
 
@@ -42,6 +60,10 @@ public class ControlChildTransparent : MonoBehaviour
 
         foreach (GameObject child in childs)
         {
+            if (child == null)
+            {
+                continue;
+            }
             if (child.GetComponent<Image>())
             {
                 Color c = child.GetComponent<Image>().color;
@@ -73,5 +95,13 @@ public class ControlChildTransparent : MonoBehaviour
             childs.Add(p.GetChild(i).gameObject);
             GetChilds(p.GetChild(i));
         }
+    }
+    public void Close()
+    {
+        this.enabled = false;
+    }
+    public void Active()
+    {
+        this.enabled = true;
     }
 }

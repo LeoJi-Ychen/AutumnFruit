@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.UI;
 public class Effect_Appear : MonoBehaviour
 {
     float transparent;
@@ -20,6 +21,8 @@ public class Effect_Appear : MonoBehaviour
     int wait_state;
     float wait_timer;
     GameObject g;
+    [Header("全部完成事件")]
+    public UnityEvent onAllComplete;
 
     public bool playOnStart = true;
     public enum Kind
@@ -51,7 +54,7 @@ public class Effect_Appear : MonoBehaviour
     }
 
 
-    private void Awake()
+    private void OnEnable()
     {
         if (obj == null)
         {
@@ -122,6 +125,7 @@ public class Effect_Appear : MonoBehaviour
         a.clock = clock;
         a.threshold_transparent = threshold_transparent;
         a.obj = obj;
+        a.onAllComplete = onAllComplete;
         if (wait_state == 1 && playOnStart)
         {
             g.SetActive(true);
@@ -135,6 +139,38 @@ public class Effect_Appear : MonoBehaviour
     public void TriggerEffect()
     {
         Debug.Log("Appear 触发成功");
+        if (g == null)
+        {
+            g = new GameObject("Appear");
+            g.SetActive(false);
+            g.AddComponent<Appear>();
+            Appear a = g.GetComponent<Appear>();
+            switch (finalMode)
+            {
+                case FinalMode.Keep:
+                    a.finalMode = Appear.FinalMode.Keep;
+                    break;
+                case FinalMode.Close:
+                    a.finalMode = Appear.FinalMode.Close;
+                    break;
+            }
+            switch (raycastMode)
+            {
+                case RaycastMode.ConditionalActive:
+                    a.raycastMode = Appear.RaycastMode.ConditionalActive;
+                    break;
+                case RaycastMode.False:
+                    a.raycastMode = Appear.RaycastMode.False;
+                    break;
+                case RaycastMode.Active:
+                    a.raycastMode = Appear.RaycastMode.Active;
+                    break;
+            }
+            a.clock = clock;
+            a.threshold_transparent = threshold_transparent;
+            a.obj = obj;
+            a.onAllComplete = onAllComplete;
+        }
         playOnStart = true;
         timer = 0;
         wait_timer = 0;

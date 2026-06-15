@@ -53,7 +53,7 @@ public class Effect_Fade : MonoBehaviour
         Auto
     }
 
-    private void Awake()
+    private void OnEnable()
     {
         if (obj == null)
         {
@@ -140,6 +140,37 @@ public class Effect_Fade : MonoBehaviour
     public void TriggerEffect()
     {
         Debug.Log("Fade 触发成功");
+        if (g == null)
+        {
+            g = new GameObject("Fade");
+            g.SetActive(false);
+            g.AddComponent<Fade>();
+            Fade a = g.GetComponent<Fade>();
+            switch (finalMode)
+            {
+                case FinalMode.Keep:
+                    a.finalMode = Fade.FinalMode.Keep;
+                    break;
+                case FinalMode.Close:
+                    a.finalMode = Fade.FinalMode.Close;
+                    break;
+            }
+            switch (raycastMode)
+            {
+                case RaycastMode.ConditionalFalse:
+                    a.raycastMode = Fade.RaycastMode.ConditionalFalse;
+                    break;
+                case RaycastMode.False:
+                    a.raycastMode = Fade.RaycastMode.False;
+                    break;
+                case RaycastMode.Active:
+                    a.raycastMode = Fade.RaycastMode.Active;
+                    break;
+            }
+            a.clock = clock;
+            a.threshold_transparent = threshold_transparent;
+            a.obj = obj;
+        }      
         playOnStart = true;
         timer = 0;
         wait_timer = 0;
