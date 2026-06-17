@@ -12,12 +12,9 @@ public class PuzzleManager : MonoBehaviour
 
     private int placedCount = 0;
 
-    private HashSet<PuzzleTarget> completedTargets = new HashSet<PuzzleTarget>();
-
     void OnEnable()
     {
         placedCount = 0;
-        completedTargets.Clear();
     }
 
     // 👉 拼图完成时调用
@@ -29,13 +26,7 @@ public class PuzzleManager : MonoBehaviour
             return;
         }
 
-        if (completedTargets.Contains(piece.target))
-        {
-            Debug.Log("⚠️ 这个目标已经算过了，不重复计数");
-            return;
-        }
-
-        completedTargets.Add(piece.target);
+        // ⭐ 每个 piece 都计数（允许一个 target 多个 piece）
         placedCount++;
 
         Debug.Log($"[{name}] 完成进度：{placedCount}/{pieces.Count}");

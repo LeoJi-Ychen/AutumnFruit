@@ -11,10 +11,15 @@ public class PuzzleTarget : MonoBehaviour
     public float hoverDistance = 1.5f;
 
     [Header("🔧 遮挡判定开关")]
-    public bool enableOcclusionCheck = false; // 默认关闭
+    public bool enableOcclusionCheck = false;
 
     private bool isHovering = false;
-    private bool isPlaced = false;
+
+    [Header("⭐ 已放入的拼图列表")]
+    public List<PuzzlePiece> placedPieces = new List<PuzzlePiece>();
+
+    [Header("最大可放数量（0=无限）")]
+    public int maxPieces = 0;
 
     [Header("事件")]
     public UnityEvent onPlaced;
@@ -25,17 +30,14 @@ public class PuzzleTarget : MonoBehaviour
     public Vector3 replaceScale = Vector3.one;
     public float replaceSpeed = 8f;
 
-    // Hover检测
     public void CheckHover(Vector3 pieceWorldPos)
     {
-        // target 被隐藏
         if (!gameObject.activeInHierarchy)
         {
             isHovering = false;
             return;
         }
 
-        // Image透明
         Image img = GetComponent<Image>();
         if (img != null && img.color.a <= 0.01f)
         {
@@ -43,7 +45,6 @@ public class PuzzleTarget : MonoBehaviour
             return;
         }
 
-        // CanvasGroup隐藏
         CanvasGroup cg = GetComponent<CanvasGroup>();
         if (cg != null && cg.alpha <= 0.01f)
         {
@@ -51,14 +52,13 @@ public class PuzzleTarget : MonoBehaviour
             return;
         }
 
-        // 已完成
-        if (isPlaced)
+        // ⭐ 如果达到上限，不能再接收
+        if (maxPieces > 0 && placedPieces.Count >= maxPieces)
         {
             isHovering = false;
             return;
         }
 
-        // ⭐ 新增遮挡判定（排除所有 PuzzlePiece）
         if (enableOcclusionCheck)
         {
             Vector2 screenPos = Camera.main.WorldToScreenPoint(transform.position);
@@ -71,8 +71,8 @@ public class PuzzleTarget : MonoBehaviour
             bool blocked = false;
             foreach (var r in results)
             {
-                if (r.gameObject == gameObject) break; // 到自己就停止
-                if (r.gameObject.GetComponent<PuzzlePiece>() != null) continue; // 忽略拼图本身
+                if (r.gameObject == gameObject) break;
+                if (r.gameObject.GetComponent<PuzzlePiece>() != null) continue;
                 if (r.gameObject.GetComponent<Graphic>() != null)
                 {
                     blocked = true;
@@ -87,7 +87,6 @@ public class PuzzleTarget : MonoBehaviour
             }
         }
 
-        // 距离判定
         float dist = Vector3.Distance(transform.position, pieceWorldPos);
         isHovering = dist < hoverDistance;
     }
@@ -99,11 +98,19 @@ public class PuzzleTarget : MonoBehaviour
 
     public void OnPlaced(PuzzlePiece piece)
     {
-        if (isPlaced) return;
+        if (piece == null) return;
 
-        isPlaced = true;
+        // ⭐ 防止重复放同一个 piece
+        if (placedPieces.Contains(piece))
+            return;
 
-        Debug.Log("🎯 拼图放置成功：" + name);
+        // ⭐ 数量限制
+        if (maxPieces > 0 && placedPieces.Count >= maxPieces)
+            return;
+
+        placedPieces.Add(piece);
+
+        Debug.Log("🎯 拼图放置成功：" + name + " 当前数量：" + placedPieces.Count);
 
         onPlaced?.Invoke();
 

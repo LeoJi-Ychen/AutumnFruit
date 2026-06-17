@@ -936,6 +936,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleTarget
   hoverDistance: 1.5
   enableOcclusionCheck: 0
+  placedPieces: []
+  maxPieces: 0
   onPlaced:
     m_PersistentCalls:
       m_Calls: []
@@ -1324,6 +1326,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 1
 --- !u!1 &625917092
 GameObject:
@@ -1490,6 +1495,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleTarget
   hoverDistance: 1.5
   enableOcclusionCheck: 0
+  placedPieces: []
+  maxPieces: 0
   onPlaced:
     m_PersistentCalls:
       m_Calls: []
@@ -2194,6 +2201,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!1 &1024039746
 GameObject:
@@ -2901,6 +2911,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!1 &1325579323
 GameObject:
@@ -3494,6 +3507,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!1 &1569942314
 GameObject:
@@ -3990,6 +4006,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PuzzleTarget
   hoverDistance: 1.5
   enableOcclusionCheck: 0
+  placedPieces: []
+  maxPieces: 0
   onPlaced:
     m_PersistentCalls:
       m_Calls: []
@@ -4491,6 +4509,53 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &1801658010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1801658012}
+  - component: {fileID: 1801658011}
+  m_Layer: 0
+  m_Name: "\u5149\u6807"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1801658011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801658010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2573572a1007d2c47b3b2dec21bf4916, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorManager
+  normalCursor: {fileID: 2800000, guid: 8802f283e50e5bb4884e1ee40cb4cbd3, type: 3}
+  hoverCursor: {fileID: 2800000, guid: 8802f283e50e5bb4884e1ee40cb4cbd3, type: 3}
+  pressCursor: {fileID: 2800000, guid: daf7175f5eea65a488f2ca3ff05b5b0f, type: 3}
+--- !u!4 &1801658012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801658010}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.70901, y: -28.28973, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1863440684
 GameObject:
   m_ObjectHideFlags: 0
@@ -4678,6 +4743,9 @@ MonoBehaviour:
   finalMode: 0
   initMode: 0
   obj: {fileID: 0}
+  onAllComplete:
+    m_PersistentCalls:
+      m_Calls: []
   playOnStart: 0
 --- !u!114 &1913729061
 MonoBehaviour:
@@ -5414,5 +5482,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 1118704878}
   - {fileID: 1863440688}
+  - {fileID: 1801658012}
   - {fileID: 1628530579}
   - {fileID: 1514994554}
