@@ -25,6 +25,8 @@ public class Effect_Fade : MonoBehaviour
     GameObject g;
 
     public bool playOnStart = true;
+    float times;
+    public bool playOnce = true;
     public enum Kind
     {
         UI,
@@ -55,6 +57,14 @@ public class Effect_Fade : MonoBehaviour
 
     private void OnEnable()
     {
+        if (playOnce)
+        {
+            if (times > 0)
+            {
+                return;
+            }
+            times++;
+        }
         if (obj == null)
         {
             obj = this.gameObject;

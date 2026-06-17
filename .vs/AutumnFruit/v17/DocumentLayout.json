@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\UnityProject\\AutumnFruit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\newscripts\\qiehuan\\controlchildtransparent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newscripts\\qiehuan\\controlchildtransparent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\m\\effect_fade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\m\\effect_fade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\m\\effect_appear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\m\\effect_appear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\newscripts\\dajimu\\changeactive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newscripts\\dajimu\\changeactive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|c:\\unityproject\\autumnfruit\\assets\\scripts\\effect\\keyboardcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\effect\\keyboardcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\m\\appear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\m\\appear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|c:\\unityproject\\autumnfruit\\assets\\scripts\\newscripts\\newobjectmovepuzzle\\allmannage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|c:\\unityproject\\autumnfruit\\assets\\scripts\\newscripts\\qiehuan\\controlchildtransparent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newscripts\\qiehuan\\controlchildtransparent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\newscripts\\newobjectmovepuzzle\\allmannage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newscripts\\newobjectmovepuzzle\\allmannage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|c:\\unityproject\\autumnfruit\\assets\\scripts\\fpscounter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\fpscounter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fpscounter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\m\\effect_fade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\m\\effect_fade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\audio\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,10 +71,6 @@
       "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newscripts\\qiehuan\\transparencycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\newscripts\\dajimu\\changeactive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newscripts\\dajimu\\changeactive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\newscripts\\qiehuan\\transtioneffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newscripts\\qiehuan\\transtioneffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -99,27 +103,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "allmannage.cs",
-              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\newobjectmovepuzzle\\allmannage.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\newobjectmovepuzzle\\allmannage.cs",
-              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\newobjectmovepuzzle\\allmannage.cs",
-              "RelativeToolTip": "Assets\\Scripts\\newscripts\\newobjectmovepuzzle\\allmannage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAADAAAAAAAAAA==",
+              "Title": "KeyboardCommand.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Effect\\KeyboardCommand.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Effect\\KeyboardCommand.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Effect\\KeyboardCommand.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Effect\\KeyboardCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T07:31:37.698Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FPSCounter.cs",
-              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\FPSCounter.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\FPSCounter.cs",
-              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\FPSCounter.cs",
-              "RelativeToolTip": "Assets\\Scripts\\FPSCounter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T07:06:43.924Z",
+              "WhenOpened": "2026-06-17T17:01:10.188Z",
               "EditorCaption": ""
             },
             {
@@ -130,27 +121,27 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\M\\Effect_Appear.cs",
               "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_Appear.cs",
               "RelativeToolTip": "Assets\\Scripts\\M\\Effect_Appear.cs",
-              "ViewState": "AgIAAJ0AAAAAAAAAAADwv6sAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwBsAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-15T06:53:34.577Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Appear.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Appear.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\M\\Appear.cs",
               "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Appear.cs",
               "RelativeToolTip": "Assets\\Scripts\\M\\Appear.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBIAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-15T06:50:48.071Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "AudioManager.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Audio\\AudioManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\AudioManager.cs",
@@ -162,7 +153,57 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChangeActive.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\dajimu\\ChangeActive.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\dajimu\\ChangeActive.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\dajimu\\ChangeActive.cs",
+              "RelativeToolTip": "Assets\\Scripts\\newscripts\\dajimu\\ChangeActive.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-27T16:34:23.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Effect_Fade.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_Fade.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\M\\Effect_Fade.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_Fade.cs",
+              "RelativeToolTip": "Assets\\Scripts\\M\\Effect_Fade.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAQwBwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T06:56:24.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FPSCounter.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\FPSCounter.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FPSCounter.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\FPSCounter.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FPSCounter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T07:06:43.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "allmannage.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\newobjectmovepuzzle\\allmannage.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\newobjectmovepuzzle\\allmannage.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\newobjectmovepuzzle\\allmannage.cs",
+              "RelativeToolTip": "Assets\\Scripts\\newscripts\\newobjectmovepuzzle\\allmannage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T07:31:37.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ControlChildTransparent.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\qiehuan\\ControlChildTransparent.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\qiehuan\\ControlChildTransparent.cs",
@@ -175,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "VolumeSetting.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Audio\\VolumeSetting.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\VolumeSetting.cs",
@@ -187,19 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Effect_Fade.cs",
-              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_Fade.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\M\\Effect_Fade.cs",
-              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_Fade.cs",
-              "RelativeToolTip": "Assets\\Scripts\\M\\Effect_Fade.cs",
-              "ViewState": "AgIAALAAAAAAAAAAAAAIwKsAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T06:56:24.796Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Button_SetActive.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Button\\Button_SetActive.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Button\\Button_SetActive.cs",
@@ -211,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "WaterGameplay.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\water\\WaterGameplay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\water\\WaterGameplay.cs",
@@ -223,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "CloudFloat.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\cloud\\CloudFloat.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\cloud\\CloudFloat.cs",
@@ -235,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Effect_ButtonLightAndDark.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Effect\\Effect_ButtonLightAndDark.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Effect\\Effect_ButtonLightAndDark.cs",
@@ -247,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "WaterBubble.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\water\\WaterBubble.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\water\\WaterBubble.cs",
@@ -259,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "WaterProgressBar.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\water\\WaterProgressBar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\water\\WaterProgressBar.cs",
@@ -271,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "TransparencyController.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\qiehuan\\TransparencyController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\qiehuan\\TransparencyController.cs",
@@ -283,19 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ChangeActive.cs",
-              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\dajimu\\ChangeActive.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\dajimu\\ChangeActive.cs",
-              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\dajimu\\ChangeActive.cs",
-              "RelativeToolTip": "Assets\\Scripts\\newscripts\\dajimu\\ChangeActive.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-27T16:34:23.877Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "TranstionEffect.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\qiehuan\\TranstionEffect.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\qiehuan\\TranstionEffect.cs",
@@ -307,7 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "BubbleClickGameplay.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Effect\\BubbleClickGameplay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Effect\\BubbleClickGameplay.cs",
@@ -319,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "TranstionEffect.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Effect\\TranstionEffect.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Effect\\TranstionEffect.cs",

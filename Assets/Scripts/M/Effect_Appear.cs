@@ -25,6 +25,8 @@ public class Effect_Appear : MonoBehaviour
     public UnityEvent onAllComplete;
 
     public bool playOnStart = true;
+    float times;
+    public bool playOnce = true;
     public enum Kind
     {
         UI,
@@ -56,6 +58,14 @@ public class Effect_Appear : MonoBehaviour
 
     private void OnEnable()
     {
+        if (playOnce)
+        {
+            if (times > 0) 
+            { 
+                return; 
+            }
+            times++;
+        }
         if (obj == null)
         {
             obj = this.gameObject;

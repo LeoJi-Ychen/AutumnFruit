@@ -37,6 +37,10 @@ public class ChangeActive : MonoBehaviour
             }
         }
     }
+    public void Close()
+    {
+        this.enabled = false;
+    }
     void Change()
     {
         List<GameObject> list = new List<GameObject>(activeObjects);
