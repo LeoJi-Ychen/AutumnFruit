@@ -34,7 +34,10 @@ public class SimpleAudioPlayer : MonoBehaviour
     [Header("BGM淡出时间")]
     public float fadeTime = 1f;
 
-    [Header("初始音量")]
+    [Header("渐显时间")]
+    public float fadeInTime = 1f;
+
+    [Header("初始音量（目标音量）")]
     [Range(0f, 1f)]
     public float startVolume = 1f;
 
@@ -50,11 +53,11 @@ public class SimpleAudioPlayer : MonoBehaviour
         audioSource.playOnAwake = false;
 
         ApplySettings();
-        audioSource.volume = startVolume;
 
-        // =========================
-        // 🎵 跨场景BGM逻辑
-        // =========================
+        // 默认从 0 开始（渐显核心）
+        audioSource.volume = 0f;
+
+        // 跨场景BGM逻辑
         if (dontDestroyOnLoad)
         {
             if (audioType == AudioType.BGM)
@@ -85,7 +88,6 @@ public class SimpleAudioPlayer : MonoBehaviour
 
     void Update()
     {
-        // ⭐ 旁白播放完自动销毁
         if (destroyAfterFinish &&
             audioType == AudioType.Voice &&
             hasPlayed &&
@@ -106,9 +108,6 @@ public class SimpleAudioPlayer : MonoBehaviour
     {
         ApplySettings();
 
-        // =========================
-        // 🎵 BGM（互相替换 + 跨场景）
-        // =========================
         if (audioType == AudioType.BGM)
         {
             if (currentBGM != null && currentBGM != this)
@@ -118,31 +117,30 @@ public class SimpleAudioPlayer : MonoBehaviour
 
             currentBGM = this;
 
-            audioSource.volume = startVolume;
+            audioSource.volume = 0f;
             audioSource.Play();
+            StartCoroutine(FadeIn());
+
             return;
         }
 
-        // =========================
-        // 🗣 Voice（旁白）
-        // =========================
         if (audioType == AudioType.Voice)
         {
             if (playOnlyOnce && hasPlayed)
                 return;
 
-            audioSource.volume = startVolume;
+            audioSource.volume = 0f;
             audioSource.Play();
+            StartCoroutine(FadeIn());
 
             hasPlayed = true;
             return;
         }
 
-        // =========================
-        // 🔊 SFX
-        // =========================
-        audioSource.volume = startVolume;
+        // SFX
+        audioSource.volume = 0f;
         audioSource.Play();
+        StartCoroutine(FadeIn());
     }
 
     public void TriggerPlay()
@@ -170,6 +168,21 @@ public class SimpleAudioPlayer : MonoBehaviour
         }
 
         audioSource.Stop();
+        audioSource.volume = startVolume;
+    }
+
+    // 🌟 渐显
+    IEnumerator FadeIn()
+    {
+        float t = 0;
+
+        while (t < fadeInTime)
+        {
+            t += Time.deltaTime;
+            audioSource.volume = Mathf.Lerp(0, startVolume, t / fadeInTime);
+            yield return null;
+        }
+
         audioSource.volume = startVolume;
     }
 
