@@ -6,8 +6,11 @@ public class Effect_SetFalse : MonoBehaviour
     public List<GameObject> next;
     public Effect effect;
     public float delay_time;
+    public bool PlayOnAwake = true;
+    public bool PlayOnce = false;
     int state;
     float timer;
+    int times;
     public enum Effect
     {
         Directly,
@@ -15,12 +18,20 @@ public class Effect_SetFalse : MonoBehaviour
     }
     private void OnEnable()
     {
+        if (!PlayOnAwake)
+        {
+            return;
+        }
+        if (PlayOnce)
+        {
+            if (times > 0)
+            {
+                return;
+            }
+            times++;
+        }
         timer = 0;
         state = 0;
-    }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
         False();
     }
 
@@ -41,7 +52,7 @@ public class Effect_SetFalse : MonoBehaviour
             }
         }
     }
-    void False()
+    public void False()
     {
         if (effect == Effect.Directly)
         {
