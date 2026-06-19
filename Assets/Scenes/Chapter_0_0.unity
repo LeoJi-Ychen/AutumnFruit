@@ -1152,7 +1152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 768a21a19be51064dad58539579d09e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Effect_Appear
-  clock: 0
+  clock: 0.6
   effect: 0
   delayedClock: 0
   raycastMode: 1
@@ -3022,6 +3022,8 @@ MonoBehaviour:
   - {fileID: 1568922095}
   effect: 1
   delay_time: 3
+  PlayOnAwake: 1
+  PlayOnce: 0
 --- !u!114 &130989993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4177,6 +4179,8 @@ MonoBehaviour:
   - {fileID: 801354182}
   effect: 1
   delay_time: 1
+  PlayOnAwake: 1
+  PlayOnce: 0
 --- !u!114 &176609193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12969,6 +12973,8 @@ MonoBehaviour:
   - {fileID: 801354182}
   effect: 1
   delay_time: 1
+  PlayOnAwake: 1
+  PlayOnce: 0
 --- !u!114 &344906165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14695,7 +14701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 768a21a19be51064dad58539579d09e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Effect_Appear
-  clock: 0
+  clock: 0.6
   effect: 0
   delayedClock: 0
   raycastMode: 1
@@ -22997,7 +23003,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &694119256
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24945,6 +24951,8 @@ MonoBehaviour:
   - {fileID: 905845072}
   effect: 1
   delay_time: 1
+  PlayOnAwake: 1
+  PlayOnce: 0
 --- !u!1 &801443040
 GameObject:
   m_ObjectHideFlags: 0
@@ -26289,6 +26297,8 @@ MonoBehaviour:
   - {fileID: 25212902}
   effect: 1
   delay_time: 1.15
+  PlayOnAwake: 1
+  PlayOnce: 0
 --- !u!114 &846935466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26306,6 +26316,8 @@ MonoBehaviour:
   - {fileID: 0}
   effect: 1
   delay_time: 4.46
+  PlayOnAwake: 1
+  PlayOnce: 0
 --- !u!114 &846935467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27250,6 +27262,8 @@ MonoBehaviour:
   - {fileID: 1117733284}
   effect: 1
   delay_time: 0.79
+  PlayOnAwake: 1
+  PlayOnce: 0
 --- !u!114 &905845079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27813,6 +27827,8 @@ MonoBehaviour:
   - {fileID: 0}
   effect: 0
   delay_time: 0
+  PlayOnAwake: 1
+  PlayOnce: 0
 --- !u!114 &925702637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28737,6 +28753,8 @@ MonoBehaviour:
   - {fileID: 0}
   effect: 0
   delay_time: 0
+  PlayOnAwake: 1
+  PlayOnce: 0
 --- !u!114 &946431639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29941,7 +29959,7 @@ RectTransform:
   m_GameObject: {fileID: 993672981}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0000798, y: 1.0000798, z: 1.0000798}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 61203149}
@@ -29949,11 +29967,11 @@ RectTransform:
   - {fileID: 958868847}
   - {fileID: 2041223481}
   - {fileID: 613378928}
-  m_Father: {fileID: 1900925014}
+  m_Father: {fileID: 1256855989}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1063.0005, y: 112.99919}
+  m_AnchoredPosition: {x: 1621.3062, y: 850.067}
   m_SizeDelta: {x: 444.24, y: 667.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &993672983
@@ -32377,6 +32395,8 @@ MonoBehaviour:
   - {fileID: 130989982}
   effect: 0
   delay_time: 0
+  PlayOnAwake: 1
+  PlayOnce: 0
 --- !u!114 &1117733287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32663,6 +32683,8 @@ MonoBehaviour:
   - {fileID: 1956804896}
   effect: 0
   delay_time: 0
+  PlayOnAwake: 1
+  PlayOnce: 0
 --- !u!114 &1121185618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34482,7 +34504,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 671, y: 426}
+  m_AnchoredPosition: {x: 589, y: 418}
   m_SizeDelta: {x: 180.74, y: 198.39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1188321533
@@ -35646,6 +35668,7 @@ RectTransform:
   - {fileID: 815415632}
   - {fileID: 1251232172}
   - {fileID: 1382279489}
+  - {fileID: 993672982}
   - {fileID: 672191953}
   - {fileID: 458660397}
   - {fileID: 912838644}
@@ -38187,6 +38210,8 @@ MonoBehaviour:
   - {fileID: 801354182}
   effect: 1
   delay_time: 1
+  PlayOnAwake: 1
+  PlayOnce: 0
 --- !u!114 &1379920839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38352,6 +38377,8 @@ MonoBehaviour:
   - {fileID: 0}
   effect: 0
   delay_time: 0
+  PlayOnAwake: 1
+  PlayOnce: 0
 --- !u!114 &1382859408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52674,7 +52701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 768a21a19be51064dad58539579d09e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Effect_Appear
-  clock: 0
+  clock: 0.6
   effect: 0
   delayedClock: 0
   raycastMode: 1
@@ -53120,6 +53147,8 @@ MonoBehaviour:
   - {fileID: 801354182}
   effect: 1
   delay_time: 1
+  PlayOnAwake: 1
+  PlayOnce: 0
 --- !u!114 &1563331264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53219,7 +53248,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1568922096
 RectTransform:
   m_ObjectHideFlags: 0
@@ -53317,7 +53346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 768a21a19be51064dad58539579d09e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Effect_Appear
-  clock: 0
+  clock: 0.6
   effect: 0
   delayedClock: 0
   raycastMode: 1
@@ -54990,6 +55019,8 @@ MonoBehaviour:
   - {fileID: 801354182}
   effect: 1
   delay_time: 1
+  PlayOnAwake: 1
+  PlayOnce: 0
 --- !u!114 &1642655281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58661,6 +58692,8 @@ MonoBehaviour:
   - {fileID: 0}
   effect: 0
   delay_time: 0
+  PlayOnAwake: 1
+  PlayOnce: 0
 --- !u!114 &1797233258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59826,7 +59859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 768a21a19be51064dad58539579d09e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Effect_Appear
-  clock: 0
+  clock: 0.6
   effect: 0
   delayedClock: 0
   raycastMode: 1
@@ -60248,6 +60281,8 @@ MonoBehaviour:
   - {fileID: 801354182}
   effect: 1
   delay_time: 1
+  PlayOnAwake: 1
+  PlayOnce: 0
 --- !u!114 &1861199374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61418,7 +61453,6 @@ RectTransform:
   m_Children:
   - {fileID: 1853416273}
   - {fileID: 1538025139}
-  - {fileID: 993672982}
   - {fileID: 1882645458}
   - {fileID: 1503070385}
   m_Father: {fileID: 1251232172}
@@ -62476,7 +62510,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1956804897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62576,6 +62610,8 @@ MonoBehaviour:
   - {fileID: 1121185616}
   effect: 0
   delay_time: 0
+  PlayOnAwake: 1
+  PlayOnce: 0
 --- !u!114 &1956804902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62654,6 +62690,8 @@ MonoBehaviour:
   - {fileID: 0}
   effect: 0
   delay_time: 0
+  PlayOnAwake: 1
+  PlayOnce: 0
 --- !u!114 &1959024018
 MonoBehaviour:
   m_ObjectHideFlags: 0
