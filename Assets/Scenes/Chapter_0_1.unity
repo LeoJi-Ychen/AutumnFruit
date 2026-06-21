@@ -175,6 +175,8 @@ MonoBehaviour:
   - {fileID: 0}
   effect: 1
   delay_time: 0.79
+  PlayOnAwake: 1
+  PlayOnce: 0
 --- !u!114 &12556730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,6 +201,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playOnStart: 1
+  playOnce: 1
 --- !u!114 &12556731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -575,6 +578,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playOnStart: 1
+  playOnce: 1
 --- !u!1 &439885897
 GameObject:
   m_ObjectHideFlags: 0
@@ -670,6 +674,8 @@ MonoBehaviour:
   - {fileID: 12556727}
   effect: 1
   delay_time: 1
+  PlayOnAwake: 1
+  PlayOnce: 0
 --- !u!114 &653214298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -694,6 +700,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playOnStart: 1
+  playOnce: 1
 --- !u!114 &653214299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -878,6 +885,7 @@ MonoBehaviour:
   dontDestroyOnLoad: 1
   destroyAfterFinish: 0
   fadeTime: 1
+  fadeInTime: 1
   startVolume: 0.54
 --- !u!82 &792831735
 AudioSource:
@@ -1158,6 +1166,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playOnStart: 0
+  playOnce: 1
 --- !u!114 &905104465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1350,6 +1359,7 @@ MonoBehaviour:
   initMode: 0
   obj: {fileID: 0}
   playOnStart: 1
+  playOnce: 1
 --- !u!114 &1018967672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1481,6 +1491,7 @@ GameObject:
   - component: {fileID: 1331375537}
   - component: {fileID: 1331375540}
   - component: {fileID: 1331375541}
+  - component: {fileID: 1331375542}
   m_Layer: 5
   m_Name: "\u4F5C\u4E1A"
   m_TagString: Untagged
@@ -1504,8 +1515,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -399.87, y: 1080}
-  m_SizeDelta: {x: 115.96, y: 111.51}
+  m_AnchoredPosition: {x: -399.87, y: 1088.66}
+  m_SizeDelta: {x: 115.96, y: 128.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1331375537
 MonoBehaviour:
@@ -1564,14 +1575,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6149613, g: 0.8037735, b: 0.56264144, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 2014945004964225292, guid: 9eadd9a3f9f6c3c47b61e79903934d28, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1640,6 +1651,22 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playOnStart: 1
+  playOnce: 1
+--- !u!114 &1331375542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331375535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4588bda5ebdd7d498f0667982b9394d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIDragShadow
+  offset: {x: 8, y: -8}
+  shadowColor: {r: 0, g: 0, b: 0, a: 0.2}
+  disableByButton: 1
 --- !u!1 &1332632700
 GameObject:
   m_ObjectHideFlags: 0
@@ -1983,6 +2010,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playOnStart: 1
+  playOnce: 1
 --- !u!1 &1599214180
 GameObject:
   m_ObjectHideFlags: 0
