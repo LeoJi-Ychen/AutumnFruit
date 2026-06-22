@@ -13,7 +13,7 @@ public class InitLoaction : MonoBehaviour
     }
     private void OnEnable()
     {
-        Debug.Log(1);
+        //Debug.Log(1);
         if (local)
         {
             transform.localPosition = localPos;
