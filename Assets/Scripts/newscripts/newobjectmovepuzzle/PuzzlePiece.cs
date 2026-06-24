@@ -138,14 +138,62 @@ public class PuzzlePiece : MonoBehaviour,
     {
         if (!enableDrag || !canDrag || isLocked) return;
 
-        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+        DragByCanvasMode(eventData);
+        //rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
 
         if (target != null)
         {
             target.CheckHover(transform.position);
         }
     }
+    private void DragByCanvasMode(PointerEventData eventData)
+    {
+        if (canvas == null)
+            return;
 
+        switch (canvas.renderMode)
+        {
+            case RenderMode.ScreenSpaceOverlay:
+                DragScreenSpaceOverlay(eventData);
+                break;
+
+            case RenderMode.ScreenSpaceCamera:
+                DragScreenSpaceCamera(eventData);
+                break;
+
+            case RenderMode.WorldSpace:
+                DragWorldSpace(eventData);
+                break;
+        }
+    }
+
+    private void DragScreenSpaceOverlay(PointerEventData eventData)
+    {
+        rectTransform.anchoredPosition +=
+            eventData.delta / canvas.scaleFactor;
+    }
+
+    private void DragScreenSpaceCamera(PointerEventData eventData)
+    {
+        rectTransform.anchoredPosition +=
+            eventData.delta / canvas.scaleFactor;
+    }
+
+    private void DragWorldSpace(PointerEventData eventData)
+    {
+        Camera cam = eventData.pressEventCamera;
+
+        Vector3 worldPoint;
+
+        if (RectTransformUtility.ScreenPointToWorldPointInRectangle(
+            rectTransform,
+            eventData.position,
+            cam,
+            out worldPoint))
+        {
+            rectTransform.position = worldPoint;
+        }
+    }
     public void OnEndDrag(PointerEventData eventData)
     {
         if (!enableDrag || !canDrag || isLocked) return;
