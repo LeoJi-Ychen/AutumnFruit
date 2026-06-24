@@ -1523,6 +1523,7 @@ GameObject:
   - component: {fileID: 53422153}
   - component: {fileID: 53422157}
   - component: {fileID: 53422158}
+  - component: {fileID: 53422159}
   m_Layer: 5
   m_Name: "\u5706\u5F62\u79CD\u5B50"
   m_TagString: Untagged
@@ -1724,6 +1725,21 @@ MonoBehaviour:
       m_Calls: []
   playOnStart: 1
   playOnce: 1
+--- !u!114 &53422159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53422151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4588bda5ebdd7d498f0667982b9394d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIDragShadow
+  offset: {x: 8, y: -8}
+  shadowColor: {r: 0, g: 0, b: 0, a: 0.56078434}
+  disableByButton: 1
 --- !u!1 &61203148
 GameObject:
   m_ObjectHideFlags: 0
@@ -1739,6 +1755,7 @@ GameObject:
   - component: {fileID: 61203151}
   - component: {fileID: 61203150}
   - component: {fileID: 61203155}
+  - component: {fileID: 61203156}
   m_Layer: 5
   m_Name: "\u65B9\u5F62\u79CD\u5B50"
   m_TagString: Untagged
@@ -1762,8 +1779,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -116.801}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -76, y: -28}
-  m_SizeDelta: {x: 116.28, y: 112.05}
+  m_AnchoredPosition: {x: -76, y: -64}
+  m_SizeDelta: {x: 138.72, y: 133.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &61203150
 MonoBehaviour:
@@ -1888,7 +1905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.78867924, g: 0.78867924, b: 0.78867924, a: 1}
+  m_Color: {r: 0.93784297, g: 0.96981126, b: 0.92040575, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1940,6 +1957,21 @@ MonoBehaviour:
   setAsChildOnSnap: 0
   destroyAfterSnap: 1
   destroyDelay: 0
+--- !u!114 &61203156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61203148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4588bda5ebdd7d498f0667982b9394d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIDragShadow
+  offset: {x: 8, y: -8}
+  shadowColor: {r: 0, g: 0, b: 0, a: 0.56078434}
+  disableByButton: 1
 --- !u!1 &74141691
 GameObject:
   m_ObjectHideFlags: 0
@@ -19303,6 +19335,7 @@ GameObject:
   - component: {fileID: 613378930}
   - component: {fileID: 613378929}
   - component: {fileID: 613378933}
+  - component: {fileID: 613378934}
   m_Layer: 5
   m_Name: "\u65E0\u7528\u79CD\u5B502"
   m_TagString: Untagged
@@ -19326,8 +19359,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -84.62}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -25.285, y: 186.12}
-  m_SizeDelta: {x: 76.77, y: 81.355}
+  m_AnchoredPosition: {x: -81, y: 161}
+  m_SizeDelta: {x: 104.11, y: 110.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &613378929
 MonoBehaviour:
@@ -19413,7 +19446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.95660377, g: 0.98634934, b: 1, a: 1}
+  m_Color: {r: 0.3830188, g: 0.8317323, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -19475,6 +19508,21 @@ MonoBehaviour:
         m_CallState: 2
   playOnStart: 1
   playOnce: 1
+--- !u!114 &613378934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613378927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4588bda5ebdd7d498f0667982b9394d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIDragShadow
+  offset: {x: 8, y: -8}
+  shadowColor: {r: 0, g: 0, b: 0, a: 0.56078434}
+  disableByButton: 1
 --- !u!1 &615806634
 GameObject:
   m_ObjectHideFlags: 0
@@ -29238,6 +29286,7 @@ GameObject:
   - component: {fileID: 958868843}
   - component: {fileID: 958868842}
   - component: {fileID: 958868848}
+  - component: {fileID: 958868849}
   m_Layer: 5
   m_Name: "\u4E09\u89D2\u5F62\u79CD\u5B50"
   m_TagString: Untagged
@@ -29370,7 +29419,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.8207547, b: 0.8207547, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -29439,6 +29488,21 @@ MonoBehaviour:
       m_Calls: []
   playOnStart: 1
   playOnce: 1
+--- !u!114 &958868849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958868841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4588bda5ebdd7d498f0667982b9394d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIDragShadow
+  offset: {x: 8, y: -8}
+  shadowColor: {r: 0, g: 0, b: 0, a: 0.56078434}
+  disableByButton: 1
 --- !u!1 &958886158
 GameObject:
   m_ObjectHideFlags: 0
@@ -52013,7 +52077,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.5}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -86, y: 60.195}
+  m_AnchoredPosition: {x: -70.99994, y: 116.99982}
   m_SizeDelta: {x: 1185.76, y: 407.37}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1517457961
@@ -52029,7 +52093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.94905657, g: 1, b: 0.9998992, a: 1}
+  m_Color: {r: 0.9037736, g: 0.9583638, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -57679,7 +57743,6 @@ MonoBehaviour:
   pieces:
   - {fileID: 2041223482}
   - {fileID: 613378929}
-  - {fileID: 1915532869}
   onPuzzleComplete:
     m_PersistentCalls:
       m_Calls:
@@ -62437,7 +62500,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1915532869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62445,7 +62508,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915532868}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4402fca0b6438044fb5b278ca1e3bea6, type: 3}
   m_Name: 
@@ -62509,7 +62572,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915532868}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -65622,6 +65685,7 @@ GameObject:
   - component: {fileID: 2041223483}
   - component: {fileID: 2041223482}
   - component: {fileID: 2041223486}
+  - component: {fileID: 2041223487}
   m_Layer: 5
   m_Name: "\u65E0\u7528\u79CD\u5B501"
   m_TagString: Untagged
@@ -65732,7 +65796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.95660377, g: 0.98634934, b: 1, a: 1}
+  m_Color: {r: 0.6245283, g: 0.74767137, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -65782,6 +65846,21 @@ MonoBehaviour:
       m_Calls: []
   playOnStart: 1
   playOnce: 1
+--- !u!114 &2041223487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041223480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4588bda5ebdd7d498f0667982b9394d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIDragShadow
+  offset: {x: 8, y: -8}
+  shadowColor: {r: 0, g: 0, b: 0, a: 0.56078434}
+  disableByButton: 1
 --- !u!1 &2045548558
 GameObject:
   m_ObjectHideFlags: 0
