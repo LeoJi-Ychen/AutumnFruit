@@ -133,8 +133,14 @@ public class PuzzlePiece : MonoBehaviour,
 
         isDragging = true;
     }
-
     public void OnDrag(PointerEventData eventData)
+    { 
+        if (!enableDrag || !canDrag || isLocked) return; 
+        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor; 
+        if (target != null) { target.CheckHover(transform.position); 
+        } 
+    }
+    public void OnDragPlus(PointerEventData eventData)
     {
         if (!enableDrag || !canDrag || isLocked) return;
 
