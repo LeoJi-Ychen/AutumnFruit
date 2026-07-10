@@ -336,18 +336,6 @@ MonoBehaviour:
   onPuzzleComplete:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2111998322}
-        m_TargetAssemblyTypeName: CameraScroll, Assembly-CSharp
-        m_MethodName: OpenScroll
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 77406111}
         m_TargetAssemblyTypeName: Effect_ObjectMove, Assembly-CSharp
         m_MethodName: Effect
@@ -407,6 +395,66 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2111998322}
+        m_TargetAssemblyTypeName: CameraScroll, Assembly-CSharp
+        m_MethodName: SetMaxY
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2111998322}
+        m_TargetAssemblyTypeName: CameraScroll, Assembly-CSharp
+        m_MethodName: SetMinY
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: -12
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2111998322}
+        m_TargetAssemblyTypeName: CameraScroll, Assembly-CSharp
+        m_MethodName: CheckBottom
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2111998322}
+        m_TargetAssemblyTypeName: CameraScroll, Assembly-CSharp
+        m_MethodName: OpenScroll
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2111998322}
+        m_TargetAssemblyTypeName: CameraScroll, Assembly-CSharp
+        m_MethodName: MoveDirectly
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: -0.5
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!224 &16582098
 RectTransform:
@@ -11241,6 +11289,7 @@ MonoBehaviour:
   startCanScroll: 0
   scrollSpeed: 6.61
   smoothSpeed: 5.39
+  dragSpeed: 0.02
   minY: -24
   maxY: 0
 --- !u!1 &2129474057
