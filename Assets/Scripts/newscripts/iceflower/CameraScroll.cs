@@ -75,7 +75,7 @@ public class CameraScroll : MonoBehaviour
     }
     void CheckBottomEdge()
     {
-        if ((transform.position.y - minY) <= 0.01f)
+        if ((transform.position.y - minY) <= 0.1f)
         {
             transform.position = new Vector3(transform.position.x,minY,transform.position.z);
             targetY = minY;

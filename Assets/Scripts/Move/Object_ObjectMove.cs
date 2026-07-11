@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Object_ObjectMove : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class Object_ObjectMove : MonoBehaviour
     public AnimationCurve speedCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
 
     float time = 0f;
+    public UnityEvent onMoveComplete;
+
 
     void Update()
     {
@@ -40,6 +43,8 @@ public class Object_ObjectMove : MonoBehaviour
 
             if (next != null)
                 next.SetActive(true);
+
+            onMoveComplete?.Invoke();
         }
     }
 

@@ -444,18 +444,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2111998322}
-        m_TargetAssemblyTypeName: CameraScroll, Assembly-CSharp
-        m_MethodName: MoveDirectly
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: -0.5
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!224 &16582098
 RectTransform:
   m_ObjectHideFlags: 0
@@ -749,6 +737,21 @@ MonoBehaviour:
   effect: 0
   delayedClock: 0
   playOnStart: 0
+  onComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2111998322}
+        m_TargetAssemblyTypeName: CameraScroll, Assembly-CSharp
+        m_MethodName: MoveDirectly
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: -1
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &77406112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -790,6 +793,9 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  onMoveComplete:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &77406113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2551,6 +2557,9 @@ MonoBehaviour:
   effect: 0
   delayedClock: 0
   playOnStart: 0
+  onComplete:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &372978386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2617,6 +2626,9 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  onMoveComplete:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &372978388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8452,6 +8464,9 @@ MonoBehaviour:
   effect: 0
   delayedClock: 0
   playOnStart: 0
+  onComplete:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1579924271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8493,6 +8508,9 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  onMoveComplete:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1593026303
 GameObject:
   m_ObjectHideFlags: 0
