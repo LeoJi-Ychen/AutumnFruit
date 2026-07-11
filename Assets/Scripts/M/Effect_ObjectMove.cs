@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class Effect_ObjectMove : MonoBehaviour
@@ -21,6 +22,8 @@ public class Effect_ObjectMove : MonoBehaviour
     float wait_timer = 0;
     int wait_state;
 
+    [Header("全部完成事件")]
+    public UnityEvent onComplete;
     public enum mode
     {
         move,
@@ -61,6 +64,10 @@ public class Effect_ObjectMove : MonoBehaviour
             }
         }
     }
+    void OnMoveComplete()
+    {
+        onComplete?.Invoke();
+    }
 
     public void Effect()
     {
@@ -70,6 +77,7 @@ public class Effect_ObjectMove : MonoBehaviour
         clickstate = 1;
 
         Object_ObjectMove move = obj.GetComponent<Object_ObjectMove>();
+        move.onMoveComplete.AddListener(OnMoveComplete);
 
         // ⭐ 起点
         move.posA = obj.transform.position;
