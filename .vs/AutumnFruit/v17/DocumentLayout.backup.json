@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\UnityProject\\AutumnFruit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\newscripts\\iceflower\\shangxiatuodong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newscripts\\iceflower\\shangxiatuodong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|c:\\unityproject\\autumnfruit\\assets\\scripts\\move\\object_objectmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\move\\object_objectmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|c:\\unityproject\\autumnfruit\\assets\\scripts\\resolutionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\resolutionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|c:\\unityproject\\autumnfruit\\assets\\scripts\\m\\effect_objectmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\m\\effect_objectmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\m\\effect_appear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\m\\effect_appear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\m\\effect_fade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\m\\effect_fade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\newscripts\\newobjectmovepuzzle\\puzzlepiece.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newscripts\\newobjectmovepuzzle\\puzzlepiece.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|c:\\unityproject\\autumnfruit\\assets\\scripts\\newscripts\\iceflower\\camerascroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newscripts\\iceflower\\camerascroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\resolutionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\resolutionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\effect\\uiparticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,14 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\m\\effect_setactive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\m\\effect_setactive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\m\\effect_fade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\m\\effect_fade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\m\\effect_appear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\m\\effect_appear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\newscripts\\dajimu\\changeactive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -122,8 +130,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Object_ObjectMove.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Move\\Object_ObjectMove.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Move\\Object_ObjectMove.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Move\\Object_ObjectMove.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Move\\Object_ObjectMove.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T13:15:31.67Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -135,56 +156,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ResolutionManager.cs",
-              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\ResolutionManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ResolutionManager.cs",
-              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\ResolutionManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ResolutionManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Title": "Effect_ObjectMove.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_ObjectMove.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\M\\Effect_ObjectMove.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_ObjectMove.cs",
+              "RelativeToolTip": "Assets\\Scripts\\M\\Effect_ObjectMove.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAkwEUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-24T07:32:32.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PuzzlePiece.cs",
-              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\newobjectmovepuzzle\\PuzzlePiece.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\newobjectmovepuzzle\\PuzzlePiece.cs",
-              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\newobjectmovepuzzle\\PuzzlePiece.cs",
-              "RelativeToolTip": "Assets\\Scripts\\newscripts\\newobjectmovepuzzle\\PuzzlePiece.cs",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAQwJEAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-24T07:19:25.16Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UIParticle.cs",
-              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Effect\\UIParticle.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Effect\\UIParticle.cs",
-              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Effect\\UIParticle.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Effect\\UIParticle.cs",
-              "ViewState": "AgIAAA0BAAAAAAAAAAAAwDMAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-19T17:35:04.486Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "shangxiatuodong.cs",
-              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\iceflower\\shangxiatuodong.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\iceflower\\shangxiatuodong.cs",
-              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\iceflower\\shangxiatuodong.cs",
-              "RelativeToolTip": "Assets\\Scripts\\newscripts\\iceflower\\shangxiatuodong.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-19T11:41:42.093Z",
+              "WhenOpened": "2026-07-11T13:04:14.54Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "CameraScroll.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\iceflower\\CameraScroll.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\iceflower\\CameraScroll.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\iceflower\\CameraScroll.cs",
+              "RelativeToolTip": "Assets\\Scripts\\newscripts\\iceflower\\CameraScroll.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAkwEsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T22:43:22.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PuzzlePiece.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\newobjectmovepuzzle\\PuzzlePiece.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\newobjectmovepuzzle\\PuzzlePiece.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\newobjectmovepuzzle\\PuzzlePiece.cs",
+              "RelativeToolTip": "Assets\\Scripts\\newscripts\\newobjectmovepuzzle\\PuzzlePiece.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwJEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T07:19:25.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ObjectScroll.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Effect\\ObjectScroll.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Effect\\ObjectScroll.cs",
@@ -196,7 +206,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "Effect_Fade.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_Fade.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\M\\Effect_Fade.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_Fade.cs",
+              "RelativeToolTip": "Assets\\Scripts\\M\\Effect_Fade.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAQwBwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T06:56:24.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Effect_Appear.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_Appear.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\M\\Effect_Appear.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_Appear.cs",
+              "RelativeToolTip": "Assets\\Scripts\\M\\Effect_Appear.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwBgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T06:53:34.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UIParticle.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Effect\\UIParticle.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Effect\\UIParticle.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Effect\\UIParticle.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Effect\\UIParticle.cs",
+              "ViewState": "AgIAAA0BAAAAAAAAAAAAwDMAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T17:35:04.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ResolutionManager.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\ResolutionManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ResolutionManager.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\ResolutionManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ResolutionManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-24T07:32:32.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "InitLoaction.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Effect\\InitLoaction.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Effect\\InitLoaction.cs",
@@ -208,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Effect_SetActive.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_SetActive.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\M\\Effect_SetActive.cs",
@@ -220,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Effect_SetFalse.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_SetFalse.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\M\\Effect_SetFalse.cs",
@@ -232,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "KeyboardCommand.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Effect\\KeyboardCommand.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Effect\\KeyboardCommand.cs",
@@ -244,19 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Effect_Appear.cs",
-              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_Appear.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\M\\Effect_Appear.cs",
-              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_Appear.cs",
-              "RelativeToolTip": "Assets\\Scripts\\M\\Effect_Appear.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwBsAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T06:53:34.577Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Appear.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Appear.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\M\\Appear.cs",
@@ -268,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "AudioManager.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Audio\\AudioManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\AudioManager.cs",
@@ -280,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "ChangeActive.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\dajimu\\ChangeActive.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\dajimu\\ChangeActive.cs",
@@ -292,19 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Effect_Fade.cs",
-              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_Fade.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\M\\Effect_Fade.cs",
-              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_Fade.cs",
-              "RelativeToolTip": "Assets\\Scripts\\M\\Effect_Fade.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAQwBwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T06:56:24.796Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "FPSCounter.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\FPSCounter.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FPSCounter.cs",
@@ -316,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "allmannage.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\newobjectmovepuzzle\\allmannage.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\newobjectmovepuzzle\\allmannage.cs",
@@ -328,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "ControlChildTransparent.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\qiehuan\\ControlChildTransparent.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\qiehuan\\ControlChildTransparent.cs",
@@ -340,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "VolumeSetting.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Audio\\VolumeSetting.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\VolumeSetting.cs",
@@ -352,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Button_SetActive.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Button\\Button_SetActive.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Button\\Button_SetActive.cs",
@@ -364,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "WaterGameplay.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\water\\WaterGameplay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\water\\WaterGameplay.cs",
@@ -376,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "CloudFloat.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\cloud\\CloudFloat.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\cloud\\CloudFloat.cs",
@@ -388,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "Effect_ButtonLightAndDark.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Effect\\Effect_ButtonLightAndDark.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Effect\\Effect_ButtonLightAndDark.cs",
@@ -400,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "WaterBubble.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\water\\WaterBubble.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\water\\WaterBubble.cs",
@@ -412,7 +448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "WaterProgressBar.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\water\\WaterProgressBar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\water\\WaterProgressBar.cs",
@@ -424,7 +460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "TransparencyController.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\qiehuan\\TransparencyController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\qiehuan\\TransparencyController.cs",
@@ -436,7 +472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "TranstionEffect.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\qiehuan\\TranstionEffect.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\qiehuan\\TranstionEffect.cs",
@@ -448,7 +484,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "BubbleClickGameplay.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Effect\\BubbleClickGameplay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Effect\\BubbleClickGameplay.cs",
@@ -460,7 +496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "TranstionEffect.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Effect\\TranstionEffect.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Effect\\TranstionEffect.cs",

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 public class ImageAlphaHit : MonoBehaviour
 {
     [Range(0f, 1f)]
@@ -8,11 +9,14 @@ public class ImageAlphaHit : MonoBehaviour
 
     void Start()
     {
-        Image image = GetComponent<Image>();
+        if (GetComponent<Image>())
+        {
+            Image image = GetComponent<Image>();
 
-        // 关键：启用 Alpha Hit Test
-        image.alphaHitTestMinimumThreshold = alphaThreshold;
+            // 关键：启用 Alpha Hit Test
+            image.alphaHitTestMinimumThreshold = alphaThreshold;
 
-        // 确保图片 Read/Write Enabled 已开启（见下方说明）
+            // 确保图片 Read/Write Enabled 已开启（见下方说明）
+        }
     }
 }
