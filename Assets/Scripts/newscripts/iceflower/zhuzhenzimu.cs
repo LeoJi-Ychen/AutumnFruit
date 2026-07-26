@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -6,11 +7,15 @@ using UnityEngine.Events;
 [RequireComponent(typeof(AudioSource))]
 public class TypewriterSubtitle : MonoBehaviour
 {
-    [Header("字幕")]
+    [Header("字幕显示")]
     public TextMeshProUGUI subtitle;
 
+    [Header("字幕列表（每点击一次播放下一句）")]
     [TextArea(3, 8)]
-    public string content;
+    public List<string> subtitleList = new List<string>();
+
+    [Header("是否循环播放")]
+    public bool loop = false;
 
     [Header("打字速度")]
     public float characterInterval = 0.05f;
@@ -36,6 +41,8 @@ public class TypewriterSubtitle : MonoBehaviour
     private AudioSource audioSource;
     private Coroutine typingCoroutine;
 
+    private int currentIndex = 0;
+
     void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -45,23 +52,48 @@ public class TypewriterSubtitle : MonoBehaviour
     }
 
     /// <summary>
-    /// 播放 Inspector 中填写的字幕
+    /// Button调用，每点击一次播放下一句
     /// </summary>
     public void PlaySubtitle()
+    {
+        if (subtitleList.Count == 0)
+            return;
+
+        if (typingCoroutine != null)
+            StopCoroutine(typingCoroutine);
+
+        typingCoroutine = StartCoroutine(TypeText(subtitleList[currentIndex]));
+
+        currentIndex++;
+
+        if (loop)
+        {
+            if (currentIndex >= subtitleList.Count)
+                currentIndex = 0;
+        }
+        else
+        {
+            currentIndex = Mathf.Min(currentIndex, subtitleList.Count - 1);
+        }
+    }
+
+    /// <summary>
+    /// 外部直接播放指定内容
+    /// </summary>
+    public void PlaySubtitle(string text)
     {
         if (typingCoroutine != null)
             StopCoroutine(typingCoroutine);
 
-        typingCoroutine = StartCoroutine(TypeText());
+        typingCoroutine = StartCoroutine(TypeText(text));
     }
 
     /// <summary>
-    /// 播放指定字幕
+    /// 重置回第一句
     /// </summary>
-    public void PlaySubtitle(string text)
+    public void ResetSubtitle()
     {
-        content = text;
-        PlaySubtitle();
+        currentIndex = 0;
     }
 
     /// <summary>
@@ -75,7 +107,7 @@ public class TypewriterSubtitle : MonoBehaviour
         subtitle.text = "";
     }
 
-    IEnumerator TypeText()
+    IEnumerator TypeText(string text)
     {
         if (subtitle == null)
             yield break;
@@ -85,7 +117,7 @@ public class TypewriterSubtitle : MonoBehaviour
         if (delay > 0)
             yield return new WaitForSeconds(delay);
 
-        foreach (char c in content)
+        foreach (char c in text)
         {
             subtitle.text += c;
 
