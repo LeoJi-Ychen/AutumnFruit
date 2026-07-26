@@ -55,7 +55,10 @@ public class CameraScroll : MonoBehaviour
             Mathf.Lerp(transform.position.y, targetY, smoothSpeed * Time.deltaTime),
             transform.position.z
         );
-        CheckBottomEdge();
+        if (bottomCheck)
+        {
+            CheckBottomEdge();
+        }
     }
 
     public void OpenScroll() => canScroll = true;
