@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\UnityProject\\AutumnFruit\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\newscripts\\iceflower\\camerascroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newscripts\\iceflower\\camerascroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|c:\\unityproject\\autumnfruit\\assets\\scripts\\chaptermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\chaptermenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|c:\\unityproject\\autumnfruit\\assets\\scripts\\startscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\startscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\startscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -45,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\newscripts\\newobjectmovepuzzle\\puzzlepiece.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newscripts\\newobjectmovepuzzle\\puzzlepiece.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\newscripts\\iceflower\\camerascroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newscripts\\iceflower\\camerascroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A10A8F0F-6E11-5DC1-6F13-EECADF2FC74E}|Assembly-CSharp.csproj|C:\\UnityProject\\AutumnFruit\\assets\\scripts\\resolutionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -150,7 +150,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -162,7 +162,80 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StartScreen.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\StartScreen.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\StartScreen.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\StartScreen.cs",
+              "RelativeToolTip": "Assets\\Scripts\\StartScreen.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T13:44:39.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StoryData.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\StoryData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\StoryData.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\StoryData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\StoryData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T13:42:10.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Effect_ChangeScene.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_ChangeScene.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\M\\Effect_ChangeScene.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_ChangeScene.cs",
+              "RelativeToolTip": "Assets\\Scripts\\M\\Effect_ChangeScene.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAApwCMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T13:32:38.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ImageAlphaHit.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\ImageAlphaHit.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ImageAlphaHit.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\ImageAlphaHit.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ImageAlphaHit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-13T13:13:41.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Effect_ObjectMove.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_ObjectMove.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\M\\Effect_ObjectMove.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_ObjectMove.cs",
+              "RelativeToolTip": "Assets\\Scripts\\M\\Effect_ObjectMove.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAkwEUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-11T13:04:14.54Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CameraScroll.cs",
+              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\iceflower\\CameraScroll.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\iceflower\\CameraScroll.cs",
+              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\iceflower\\CameraScroll.cs",
+              "RelativeToolTip": "Assets\\Scripts\\newscripts\\iceflower\\CameraScroll.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-10T22:43:22.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ChapterMenu.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\ChapterMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ChapterMenu.cs",
@@ -175,80 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StartScreen.cs",
-              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\StartScreen.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\StartScreen.cs",
-              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\StartScreen.cs",
-              "RelativeToolTip": "Assets\\Scripts\\StartScreen.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T13:44:39.987Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "StoryData.cs",
-              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\StoryData.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\StoryData.cs",
-              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\StoryData.cs",
-              "RelativeToolTip": "Assets\\Scripts\\StoryData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T13:42:10.456Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Effect_ChangeScene.cs",
-              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_ChangeScene.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\M\\Effect_ChangeScene.cs",
-              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_ChangeScene.cs",
-              "RelativeToolTip": "Assets\\Scripts\\M\\Effect_ChangeScene.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAApwCMAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T13:32:38.862Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ImageAlphaHit.cs",
-              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\ImageAlphaHit.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ImageAlphaHit.cs",
-              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\ImageAlphaHit.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ImageAlphaHit.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T13:13:41.343Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Effect_ObjectMove.cs",
-              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_ObjectMove.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\M\\Effect_ObjectMove.cs",
-              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_ObjectMove.cs",
-              "RelativeToolTip": "Assets\\Scripts\\M\\Effect_ObjectMove.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAkwEUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-11T13:04:14.54Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "CameraScroll.cs",
-              "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\iceflower\\CameraScroll.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\iceflower\\CameraScroll.cs",
-              "ToolTip": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\iceflower\\CameraScroll.cs",
-              "RelativeToolTip": "Assets\\Scripts\\newscripts\\iceflower\\CameraScroll.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAkwEsAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T22:43:22.614Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "PuzzlePiece.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\newscripts\\newobjectmovepuzzle\\PuzzlePiece.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\newscripts\\newobjectmovepuzzle\\PuzzlePiece.cs",
@@ -272,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Button_SetActive.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Button\\Button_SetActive.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Button\\Button_SetActive.cs",
@@ -284,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Object_ObjectMove.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\Move\\Object_ObjectMove.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Move\\Object_ObjectMove.cs",
@@ -296,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Effect_Fade.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_Fade.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\M\\Effect_Fade.cs",
@@ -308,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Effect_Appear.cs",
               "DocumentMoniker": "C:\\UnityProject\\AutumnFruit\\Assets\\Scripts\\M\\Effect_Appear.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\M\\Effect_Appear.cs",
